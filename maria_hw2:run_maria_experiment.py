@@ -1,4 +1,3 @@
-```python
 """
 Thin wrapper to execute Anastasia's run_course_encoder.py for Maria's experiment.
 Ensures outputs are directed to Maria's isolated directory without modifying the original script.
