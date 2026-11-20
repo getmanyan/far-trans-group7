@@ -1,80 +1,33 @@
-# HW2 — LLM attribute encoder for FAR-Trans (Anastasia Getman, Group 7)
+# Group 7 — FAR-Trans team project (LLM4Rec, HSE University)
 
-**Research question (Encoder track).** Do LLM-derived asset attributes improve nDCG@10
-over the same content-based recommender that uses only the raw as-of asset metadata?
+Team: Anastasia Getman (Гетман Анастасия), Maria Senenko (Сененко Мария),
+Dilara Faritova (Фаритова Дилара).
 
-**Change.** The course's LLM-Rec-inspired encoder asks the LLM to *paraphrase* each
-asset's metadata. This encoder instead asks the LLM to *fill a fixed schema* —
-`asset_class`, `sector`, `region`, `currency`, each from a closed vocabulary — from the
-as-of metadata and the asset name. Valid answers become prefixed tokens
-(`sector_financials`), a second TF-IDF view next to the raw-metadata view. Scoring is
-unchanged from the course encoder: a count-weighted profile of the user's past Buys,
-cosine similarity over all 767 eligible assets, top ten.
+Common task: for each evaluated customer, a Top-10 list of assets from the FAR-Trans dataset,
+scored by nDCG@10 against the assets bought in the evaluation window. Track: **Encoder** — an
+LLM turns each asset's as-of metadata into a representation used by a content-based recommender.
 
-| Method | Role |
-|---|---|
-| `popularity`, `cbf`, `latest_buy`, `latest_buy_or_sell` | four provided baselines (starter, unchanged) |
-| `original_text_cbf` | control: raw-metadata TF-IDF only |
-| `rule_attr_encoder` | same-information control: same schema filled by fixed rules from raw metadata, no LLM |
-| `llm_attr_encoder` | **my method**: raw view + LLM attribute view |
-| `llm_attr_only` | ablation: LLM attribute view only |
-| `llmrec_encoder` | optional: course paraphrase encoder run on the same GPU |
+Joint question (Session 1): do LLM-derived asset representations improve nDCG@10 over the same
+recommender on raw FAR-Trans metadata, in particular for customers with 1–3 past purchases?
+After Session 2 we narrowed it to *under which conditions* such representations help.
 
-Invalid LLM answers (no JSON, wrong keys, value outside the vocabulary) are logged in
-`encoder_failures.jsonl`; with `--on-invalid fallback` that asset keeps only its raw
-view. Results include those fallbacks and their count is reported.
+## Where each member's work is
 
-## Protocol
+| Member | Session 2 (HW2) change | Location |
+|---|---|---|
+| Anastasia Getman | LLM attribute extraction into a closed vocabulary (asset class, sector, region, currency), with a rule-based no-LLM control | [`anastasia_hw2/`](anastasia_hw2/) on `main` |
+| Dilara Faritova | Structured attributes copied from the source fields, with validation, fallback and a no-LLM control | branch [`dilara/hw2-structured-encoder`](https://github.com/getmanyan/far-trans-group7/tree/dilara/hw2-structured-encoder), folder `dilara_hw2/` (pull request #1) |
+| Maria Senenko | Course LLM-Rec paraphrase encoder run and subgroup analysis | branch [`maria/hw2-paraphrase-encoder`](https://github.com/getmanyan/far-trans-group7/tree/maria/hw2-paraphrase-encoder) |
 
-Starter defaults: deterministic 100-user warm sample, cutoff 2021-06-01 (exclusive),
-30-day Buy window, repeat purchases allowed, binary nDCG@10, empty truth = 0 in the
-all-user mean, nonempty mean reported separately. Course repository
-`dryjins/RecSys-LLMs` at commit `f6850861ea20a51e1fb018ee4e5f840c2ac759e0`.
-Only as-of asset metadata enters the prompt — no customer data, ISIN, price, Sell or
-future row. The asset name can activate the model's pretrained knowledge, which may
-post-date the cutoff; generated attributes are not automatically fact-checked.
-Not investment advice.
+Each member submits an individual report and AI-session export; this repository holds the code.
 
-## Model and settings
+## Common protocol for HW2
 
-`Qwen/Qwen3-1.7B`, revision `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` (same as the course
-encoder), greedy decoding, thinking disabled via the chat template, 8192-token context,
-96 new tokens per asset. bfloat16 on GPUs with compute capability ≥ 8, float16 otherwise
-(Colab T4). Exact versions, GPU and timings are written to `run_manifest.json`.
+Course starter [`dryjins/RecSys-LLMs`](https://github.com/dryjins/RecSys-LLMs/tree/main/project)
+defaults: deterministic sample of 100 warm users, cutoff 2021-06-01, 30-day window, repeat
+purchases allowed, binary nDCG@10 with empty truth counted as zero; protocol hash prefix
+`50efd4aeb415`. Model in all three runs: `Qwen/Qwen3-1.7B`, revision
+`70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`.
 
-## Run
-
-Colab (T4 GPU): open `hw2_colab.ipynb`, set `TEAM_REPO`, run all cells.
-
-Local, from the repository root (where this code lives), with a checkout of the course repository:
-
-```bash
-pip install -r requirements.txt
-python -m unittest test_attribute_encoder
-python attribute_encoder.py --course-dir /path/to/RecSys-LLMs/project \
-  --data-dir /path/to/FAR-Trans --output-dir outputs/attr_encoder \
-  --model Qwen/Qwen3-1.7B --revision 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e \
-  --allow-download --device cuda --on-invalid fallback
-python analyze.py --course-dir /path/to/RecSys-LLMs/project --data-dir /path/to/FAR-Trans \
-  --baseline outputs/baseline --runs outputs/attr_encoder --out outputs/results.md
-```
-
-`--prepare-only` writes the 767 prompts without loading a model.
-
-## Files
-
-- `attribute_encoder.py` — prompt, validation, rule control, scoring, run manifest
-- `run_course_encoder.py` — runs the course paraphrase encoder unchanged except for dtype
-- `analyze.py` — four-decimal results table, subgroup split, protocol checks
-- `test_attribute_encoder.py` — unit tests (no model, no data)
-- `hw2_colab.ipynb` — end-to-end Colab run
-
-Datasets, model weights, caches, prompts and user-level outputs are not committed
-(see `.gitignore`).
-
-## Results of the reported run (20 Nov 2026, Colab Tesla T4)
-
-`results/` holds only aggregate outputs: the results table (`results.md`), metrics of the
-baseline and encoder runs, and the run settings and timings (`run_summary.json`). User-level
-files (predictions, per-user scores, prompts, generations) stay out of git because they contain
-raw customer IDs. The encoder ran from the code in this folder, embedded in `hw2_colab.ipynb`.
+The dataset (FAR-Trans, University of Glasgow, CC BY 4.0) is not stored here:
+<https://researchdata.gla.ac.uk/1658/>. No user-level outputs with customer IDs are committed.
