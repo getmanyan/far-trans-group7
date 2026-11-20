@@ -71,3 +71,10 @@ python analyze.py --course-dir /path/to/RecSys-LLMs/project --data-dir /path/to/
 
 Datasets, model weights, caches, prompts and user-level outputs are not committed
 (see `.gitignore`).
+
+## Results of the reported run (20 Nov 2026, Colab Tesla T4)
+
+`results/` holds only aggregate outputs: the results table (`results.md`), metrics of the
+baseline and encoder runs, and the run settings and timings (`run_summary.json`). User-level
+files (predictions, per-user scores, prompts, generations) stay out of git because they contain
+raw customer IDs. The encoder ran from the code in this folder, embedded in `hw2_colab.ipynb`.

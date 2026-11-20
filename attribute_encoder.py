@@ -26,6 +26,7 @@ cutoff: this is a stated limitation, not a validated property. Not investment ad
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import platform
 import re
@@ -130,27 +131,55 @@ def attribute_text(attributes):
                     if value != 'unknown')
 
 
-def extract_attributes(documents, generator, on_invalid='error', output_dir=None):
-    """Return {asset_id: attributes}, {asset_id: token text} and failure records."""
+def cache_key(prompt, settings, max_new_tokens=MAX_NEW_TOKENS):
+    """Same key as the course runtime.LoggedGenerator, to skip cached prompts."""
+    descriptor = {'prompt': prompt, 'settings': settings, 'max_new_tokens': max_new_tokens}
+    return hashlib.sha256(json.dumps(descriptor, sort_keys=True).encode()).hexdigest()
+
+
+def extract_attributes(documents, generator, on_invalid='error', output_dir=None, batch_size=1):
+    """Return {asset_id: attributes}, {asset_id: token text} and failure records.
+
+    With batch_size > 1 and a backend offering ``prefetch``, uncached prompts of each
+    chunk are generated together; every answer still passes through the logging cache,
+    so an interrupted run resumes from the last finished chunk.
+    """
     attributes, texts, failures = {}, {}, []
-    for i, text in sorted(documents.items()):
-        response = generator.generate(attribute_prompt(text), max_new_tokens=MAX_NEW_TOKENS)
-        try:
-            parsed = parse_attributes(response['text'])
-        except ValueError as exc:
-            failure = {'asset_id': i, 'error': str(exc), 'response': response['text'],
-                       'fallback': on_invalid == 'fallback'}
-            failures.append(failure)
-            if output_dir is not None:
-                with (Path(output_dir) / 'encoder_failures.jsonl').open('a', encoding='utf-8') as s:
-                    s.write(json.dumps(failure, ensure_ascii=False) + '\n')
-            if on_invalid != 'fallback':
-                raise ValueError(f'{i}: {exc}') from None
-            # Fallback: no generated attributes; the asset keeps only its raw view.
-            parsed = {key: 'unknown' for key in SCHEMA}
-        attributes[i] = parsed
-        texts[i] = attribute_text(parsed)
+    items = sorted(documents.items())
+    backend = getattr(generator, 'backend', None)
+    prefetch = getattr(backend, 'prefetch', None) if batch_size > 1 else None
+    cache_dir = getattr(generator, 'cache', None)
+    for start in range(0, len(items), max(batch_size, 1)):
+        chunk = items[start:start + max(batch_size, 1)]
+        if prefetch is not None:
+            todo = list(dict.fromkeys(attribute_prompt(t) for _, t in chunk))
+            if cache_dir is not None:
+                todo = [q for q in todo if not (Path(cache_dir) / (cache_key(q, backend.metadata) + '.json')).exists()]
+            if todo:
+                prefetch(todo, MAX_NEW_TOKENS)
+        for i, text in chunk:
+            response = generator.generate(attribute_prompt(text), max_new_tokens=MAX_NEW_TOKENS)
+            attributes[i], texts[i] = _handle(i, response, on_invalid, output_dir, failures)
+        print(f'attributes: {min(start + len(chunk), len(items))}/{len(items)}', flush=True)
     return attributes, texts, failures
+
+
+def _handle(i, response, on_invalid, output_dir, failures):
+    """Validate one response; on failure log it and fall back or raise."""
+    try:
+        parsed = parse_attributes(response['text'])
+    except ValueError as exc:
+        failure = {'asset_id': i, 'error': str(exc), 'response': response['text'],
+                   'fallback': on_invalid == 'fallback'}
+        failures.append(failure)
+        if output_dir is not None:
+            with (Path(output_dir) / 'encoder_failures.jsonl').open('a', encoding='utf-8') as s:
+                s.write(json.dumps(failure, ensure_ascii=False) + '\n')
+        if on_invalid != 'fallback':
+            raise ValueError(f'{i}: {exc}') from None
+        # Fallback: no generated attributes; the asset keeps only its raw view.
+        parsed = {key: 'unknown' for key in SCHEMA}
+    return parsed, attribute_text(parsed)
 
 
 def predict(contexts, history, views, pop, history_scores):
@@ -174,8 +203,10 @@ class Generator:
     float16 on GPUs without native bfloat16 (e.g. Colab T4, compute capability 7.5).
     """
 
-    def __init__(self, model, revision=None, device='auto', dtype='auto', allow_download=False):
+    def __init__(self, model, revision=None, device='auto', dtype='auto', allow_download=False,
+                 batch_size=1):
         import torch
+        self._ready = {}
         import transformers
         from transformers import AutoModelForCausalLM, AutoTokenizer
         self.torch = torch
@@ -193,7 +224,7 @@ class Generator:
         if revision:
             kwargs['revision'] = revision
         self.tokenizer = AutoTokenizer.from_pretrained(model, **kwargs)
-        self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype=torch_dtype, **kwargs)
+        self.model = AutoModelForCausalLM.from_pretrained(model, dtype=torch_dtype, **kwargs)
         self.model.to(self.device).eval()
         self.metadata = {
             'model': model, 'requested_revision': revision,
@@ -203,14 +234,56 @@ class Generator:
             'torch_version': torch.__version__,
             'transformers_version': transformers.__version__,
             'python_version': platform.python_version(),
-            'do_sample': False, 'thinking': False, 'context_limit': 8192}
+            'do_sample': False, 'thinking': False, 'context_limit': 8192,
+            'batch_size': batch_size, 'padding_side': 'left' if batch_size > 1 else None}
+
+    def _chat(self, prompt):
+        return self.tokenizer.apply_chat_template([{'role': 'user', 'content': prompt}],
+                                                  tokenize=False, add_generation_prompt=True,
+                                                  enable_thinking=False)
+
+    def prefetch(self, prompts, max_new_tokens=MAX_NEW_TOKENS):
+        """Generate several prompts in one left-padded greedy batch; kept until generate()."""
+        texts = [self._chat(p) for p in prompts]
+        side = self.tokenizer.padding_side
+        self.tokenizer.padding_side = 'left'
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+        enc = self.tokenizer(texts, return_tensors='pt', padding=True)
+        inputs = {k: enc[k].to(self.device) for k in ('input_ids', 'attention_mask')}
+        self.tokenizer.padding_side = side
+        width = inputs['input_ids'].shape[1]
+        if width + max_new_tokens > 8192:
+            raise ValueError('Prompt exceeds the fixed context budget')
+        if self.device == 'cuda':
+            self.torch.cuda.synchronize()
+        started = time.perf_counter()
+        with self.torch.inference_mode():
+            out = self.model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False,
+                                      pad_token_id=self.tokenizer.pad_token_id)
+        if self.device == 'cuda':
+            self.torch.cuda.synchronize()
+        seconds = (time.perf_counter() - started) / len(prompts)
+        stop = {self.tokenizer.pad_token_id, self.tokenizer.eos_token_id}
+        for k, prompt in enumerate(prompts):
+            tokens = out[k, width:].tolist()
+            while tokens and tokens[-1] in stop:
+                tokens.pop()
+            self._ready[(prompt, max_new_tokens)] = {
+                'text': self.tokenizer.decode(tokens, skip_special_tokens=True),
+                'input_tokens': int(inputs['attention_mask'][k].sum()),
+                'output_tokens': len(tokens), 'seconds': seconds, 'batched': len(prompts)}
 
     def generate(self, prompt, max_new_tokens=MAX_NEW_TOKENS):
+        ready = self._ready.pop((prompt, max_new_tokens), None)
+        if ready is not None:
+            return ready
         messages = [{'role': 'user', 'content': prompt}]
         text = self.tokenizer.apply_chat_template(messages, tokenize=False,
                                                   add_generation_prompt=True,
                                                   enable_thinking=False)
-        inputs = self.tokenizer(text, return_tensors='pt').to(self.device)
+        enc = self.tokenizer(text, return_tensors='pt')
+        inputs = {k: enc[k].to(self.device) for k in ('input_ids', 'attention_mask')}
         n = inputs['input_ids'].shape[1]
         if n + max_new_tokens > 8192:
             raise ValueError('Prompt exceeds the fixed context budget')
@@ -256,6 +329,8 @@ def main(argv=None, generator_factory=None):
                         help='Folder "project" of a dryjins/RecSys-LLMs checkout')
     parser.add_argument('--dtype', choices=['auto', 'bfloat16', 'float16', 'float32'],
                         default='auto')
+    parser.add_argument('--batch-size', type=int, default=16,
+                        help='Prompts generated together on the GPU (1 = one at a time)')
     parser.add_argument('--prepare-only', action='store_true',
                         help='Write prompts for all eligible assets without loading a model')
     args = parser.parse_args(argv)
@@ -278,12 +353,12 @@ def main(argv=None, generator_factory=None):
 
     started = time.perf_counter()
     backend = (generator_factory or Generator)(args.model, args.revision, args.device,
-                                               args.dtype, args.allow_download)
+                                               args.dtype, args.allow_download, args.batch_size)
     generator = LoggedGenerator(backend, args.output_dir)
     load_seconds = time.perf_counter() - started
     started = time.perf_counter()
     attributes, texts, failures = extract_attributes(documents, generator, args.on_invalid,
-                                                     args.output_dir)
+                                                     args.output_dir, args.batch_size)
     inference_seconds = time.perf_counter() - started
     rules = {i: rule_attributes(json.loads(documents[i])) for i in eligible}
     agreement = {key: {'both_known': 0, 'equal': 0} for key in SCHEMA}
