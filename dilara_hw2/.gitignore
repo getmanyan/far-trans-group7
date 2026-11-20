@@ -1,0 +1,9 @@
+# Local-only experiment artifacts; never commit data, weights, or user outputs.
+data/
+outputs/
+.venv/
+generation_cache/
+*.safetensors
+*.bin
+*.gguf
+*session*.json
