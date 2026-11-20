@@ -46,7 +46,7 @@ encoder), greedy decoding, thinking disabled via the chat template, 8192-token c
 
 Colab (T4 GPU): open `hw2_colab.ipynb`, set `TEAM_REPO`, run all cells.
 
-Local, from this folder, with a checkout of the course repository:
+Local, from the repository root (where this code lives), with a checkout of the course repository:
 
 ```bash
 pip install -r requirements.txt
