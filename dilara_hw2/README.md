@@ -43,7 +43,7 @@ Download and extract the official FAR-Trans dataset so the directory contains:
 From `dilara_hw2/`:
 
 ```bash
-python -m unittest discover -s . -p 'test_encoder.py' -v
+python -m unittest discover -s . -p 'test_*.py' -v
 python -m unittest discover -s far-trans -p 'test_*.py' -v
 python encoder.py \
   --data-dir /path/to/FAR-Trans \
@@ -77,6 +77,7 @@ Keep them in a local ignored `outputs/` directory when reproducing.
 - `runtime.py`: local Transformers backend, explicit MPS support, logs and cache.
 - `structured_smoke.py`: 1-3 asset non-evaluation diagnostic.
 - `test_encoder.py`: Encoder unit and leakage tests; no model calls.
+- `ranker.py` and `test_ranker.py`: retained official LLM-package ranker support and tests.
 - `offline_analysis.py`: ablation and exploratory subgroup analysis.
 - `robustness_analysis.py`: paired bootstrap, verification worksheet and leakage checks.
 - `far-trans/starter.py`: copied official starter required by the Encoder.
