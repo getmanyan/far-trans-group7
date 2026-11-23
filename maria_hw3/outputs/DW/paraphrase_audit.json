@@ -1,0 +1,4598 @@
+{
+ "summary": {
+  "assets": 767,
+  "known_field_counts": {
+   "name": 744,
+   "category": 767,
+   "subcategory": 514,
+   "market": 767,
+   "sector": 401,
+   "industry": 356
+  },
+  "omitted_by_field": {
+   "category": 98,
+   "subcategory": 11,
+   "market": 20,
+   "sector": 1
+  },
+  "assets_with_any_omission": 113,
+  "false_unknown_cases": 18,
+  "false_unknown_assets": 18,
+  "false_unknown_by_field": {
+   "category": 18
+  },
+  "json_copy_outputs": [
+   "AU3CB0228823",
+   "AU3CB0237725",
+   "AU3CB0237881",
+   "AU3CB0258465",
+   "AU3SG0001985",
+   "AU3SG0002199",
+   "BE0974271034",
+   "BE0974303357",
+   "CA037833CY47",
+   "CA580135CD12",
+   "CH0198251305",
+   "CY0109232112",
+   "DE0001102457",
+   "DE0001135275",
+   "DE0001141703",
+   "DE0006599905",
+   "DE0007100000",
+   "DE0008404005",
+   "DE000A0DEN75",
+   "DE000A14ZT85",
+   "DE000A194DD9",
+   "DE000A2TEDB8",
+   "DE000BASF111",
+   "DE000BAY0017",
+   "ES00000121G2",
+   "ES0000012A89",
+   "ES0000012E85",
+   "ES0000012F43",
+   "ES0173516115",
+   "ES0178430E18",
+   "EU000A1U9985",
+   "EU000A1Z99E3",
+   "FI0009000681",
+   "FR0000120271",
+   "FR0000120578",
+   "FR0000121501",
+   "FR0000125486",
+   "FR0000131104",
+   "FR0000131906",
+   "FR0000133308",
+   "FR0011697010",
+   "FR0011993179",
+   "FR0013176336",
+   "FR0013176526",
+   "FR0013220902",
+   "FR0013232105",
+   "FR0013480613",
+   "GR0114031561",
+   "GR0114032577",
+   "GR0118019679",
+   "GR0124035693",
+   "GR0124036709",
+   "GR0124037715",
+   "GR0128016731",
+   "GR0138017836",
+   "GRC1441197B3",
+   "GRC1451184D4",
+   "GRC3931176B0",
+   "GRC419120AD7",
+   "GRC422116743",
+   "GRC4221197B3",
+   "GRC4261213D5",
+   "GRC4951193D4",
+   "GRC5211214B5",
+   "GRC8081169B2",
+   "GRC8121176B9",
+   "GRC8131177B5",
+   "GRC813119AD1",
+   "GRC815117CD9",
+   "GRC8161185B1",
+   "GRC8171186B7",
+   "GRF000011004",
+   "GRF000023009",
+   "GRF000024007",
+   "GRF000025004",
+   "GRF000029006",
+   "GRF000030004",
+   "GRF000031002",
+   "GRF000032000",
+   "GRF000034006",
+   "GRF000036001",
+   "GRF000037009",
+   "GRF000038007",
+   "GRF000084001",
+   "GRF000093002",
+   "GRF000153004",
+   "GRK014011008",
+   "GRS004013009",
+   "GRS014003032",
+   "GRS015003007",
+   "GRS045003001",
+   "GRS047063003",
+   "GRS054003009",
+   "GRS059063008",
+   "GRS059064006",
+   "GRS084003011",
+   "GRS087003000",
+   "GRS088003017",
+   "GRS092103001",
+   "GRS095001004",
+   "GRS095003000",
+   "GRS096003009",
+   "GRS106003007",
+   "GRS117123000",
+   "GRS120003009",
+   "GRS128003001",
+   "GRS145003000",
+   "GRS147233001",
+   "GRS148003015",
+   "GRS165063009",
+   "GRS182003004",
+   "GRS204003008",
+   "GRS208303008",
+   "GRS213213002",
+   "GRS224003004",
+   "GRS237003009",
+   "GRS239003007",
+   "GRS240003012",
+   "GRS249003005",
+   "GRS250073004",
+   "GRS260333000",
+   "GRS265003004",
+   "GRS277023008",
+   "GRS281003004",
+   "GRS282183003",
+   "GRS284183001",
+   "GRS294003009",
+   "GRS295003008",
+   "GRS296273006",
+   "GRS298343005",
+   "GRS301003000",
+   "GRS314003005",
+   "GRS315003004",
+   "GRS320313000",
+   "GRS323003012",
+   "GRS326003019",
+   "GRS329503007",
+   "GRS331043000",
+   "GRS332073006",
+   "GRS337003008",
+   "GRS340263003",
+   "GRS343313003",
+   "GRS344003009",
+   "GRS359353000",
+   "GRS373173004",
+   "GRS374003002",
+   "GRS384003000",
+   "GRS385113006",
+   "GRS387503006",
+   "GRS392193009",
+   "GRS393503008",
+   "GRS397003005",
+   "GRS404003006",
+   "GRS405003005",
+   "GRS407183003",
+   "GRS412503005",
+   "GRS413313008",
+   "GRS419003009",
+   "GRS426003000",
+   "GRS427003009",
+   "GRS432003028",
+   "GRS433003019",
+   "GRS434003000",
+   "GRS438003006",
+   "GRS445003007",
+   "GRS448003004",
+   "GRS449003003",
+   "GRS457003002",
+   "GRS470003013",
+   "GRS474003001",
+   "GRS484003009",
+   "GRS489003004",
+   "GRS495003006",
+   "GRS497003012",
+   "GRS505003004",
+   "GRS507003002",
+   "GRS511003006",
+   "GRS513003004",
+   "GRS517003000",
+   "GRS520003005",
+   "GRS807003017",
+   "IE00BFZRPZ02",
+   "IT0005030504",
+   "IT0005239360",
+   "IT0005252520",
+   "IT0005277444",
+   "IT0005344335",
+   "IT0005402117",
+   "LU0006061419",
+   "LU0012186622",
+   "LU0083138064",
+   "LU0089290844",
+   "LU0127230596",
+   "LU0128497889",
+   "LU0131126574",
+   "LU0147414022",
+   "LU0165281881",
+   "LU0167160653",
+   "LU0167236651",
+   "LU0167237543",
+   "LU0167238863",
+   "LU0170473374",
+   "LU0171275786",
+   "LU0171283459",
+   "LU0171310443",
+   "LU0172417379",
+   "LU0204480833",
+   "LU0212925753",
+   "LU0265268689",
+   "LU0278453476",
+   "LU0325598166",
+   "LU0432365988",
+   "LU0456865749",
+   "LU0476459721",
+   "LU0503635624",
+   "LU0671501806",
+   "LU0736302315",
+   "LU0823421689",
+   "LU0823427611",
+   "LU0823431720",
+   "LU0823449425",
+   "LU0953782009",
+   "LU0995120242",
+   "LU1116037828",
+   "LU1165135440",
+   "LU1484486714",
+   "LU1514167136",
+   "LU1514168027",
+   "LU1819948784",
+   "MHY8162K2046",
+   "NL0000235190",
+   "NL0010273215",
+   "NL00150001Q9",
+   "NO0010757925",
+   "NO0010844079",
+   "PTOTEQOE0015",
+   "PTOTESOE0013",
+   "US00206REJ77",
+   "US00214Q1040",
+   "US0032601066",
+   "US03512TAC53",
+   "US037833AK68",
+   "US037833CM07",
+   "US13057Q2066",
+   "US136069TY74",
+   "US172967GL98",
+   "US191216CE82",
+   "US219868BZ88",
+   "US25243YAU38",
+   "US25271CAP77",
+   "US26924G7714",
+   "US294829AA48",
+   "US298785GQ39",
+   "US298785GS94",
+   "US298785HA77",
+   "US298785HM16",
+   "US298785HP47",
+   "US298785HV15",
+   "US298785JH03",
+   "US30231GAC69",
+   "US38141GWC40",
+   "US3814305450",
+   "US40428HPR74",
+   "US42824CAG42",
+   "US42824CAW91",
+   "US459058FT50",
+   "US459058JG93",
+   "US46090E1038",
+   "US4642864007",
+   "US4642871762",
+   "US4642876555",
+   "US4642876894",
+   "US4642882579",
+   "US46429B2676",
+   "US478160BS27",
+   "US5007674055",
+   "US500769GK42",
+   "US594918BB90",
+   "US60770K1079",
+   "US61166WAW10",
+   "US64110L1061",
+   "US65504LAP22",
+   "US71647NAA72",
+   "US71647NAV10",
+   "US71647NAY58",
+   "US71647NAZ24",
+   "US72201R7750",
+   "US74347X8496",
+   "US78462F1030",
+   "US78468R6633",
+   "US81369Y5069",
+   "US822582BX94",
+   "US86562MAM29",
+   "US87264AAU97",
+   "US89114QBL14",
+   "US89236TDP75",
+   "US89236TDR32",
+   "US90184L1026",
+   "US912810RK60",
+   "US9128286C90",
+   "US912828P873",
+   "US912828U733",
+   "US92189F1066",
+   "US9219378356",
+   "US9229085538",
+   "US931422AH23",
+   "US949746SH57",
+   "US94974BGH78",
+   "US97717W8516",
+   "USC10602AR84",
+   "USC96729AC96",
+   "USF12033AZ33",
+   "USL34664AA71",
+   "XS0070553820",
+   "XS0196448129",
+   "XS0205537581",
+   "XS0207764712",
+   "XS0210976329",
+   "XS0213101073",
+   "XS0214965963",
+   "XS0478803355",
+   "XS0505157965",
+   "XS0809571739",
+   "XS0830192711",
+   "XS0832628423",
+   "XS0842659426",
+   "XS0858461758",
+   "XS0969795680",
+   "XS0989155089",
+   "XS1028955844",
+   "XS1068872925",
+   "XS1085735899",
+   "XS1208856341",
+   "XS1227247191",
+   "XS1260085037",
+   "XS1280834992",
+   "XS1292384960",
+   "XS1314321941",
+   "XS1328798779",
+   "XS1330978567",
+   "XS1361554584",
+   "XS1394055872",
+   "XS1405888576",
+   "XS1428088626",
+   "XS1497606365",
+   "XS1503043694",
+   "XS1551001768",
+   "XS1551678409",
+   "XS1576621632",
+   "XS1612977717",
+   "XS1633845158",
+   "XS1637276848",
+   "XS1645113322",
+   "XS1683407453",
+   "XS1685702794",
+   "XS1691349523",
+   "XS1717575259",
+   "XS1762980065",
+   "XS1791485011",
+   "XS1824424706",
+   "XS1865186321",
+   "XS1909184753",
+   "XS1915152000",
+   "XS1980857319",
+   "XS2010037849",
+   "XS2010038144",
+   "XS2018638648",
+   "XS2028846363",
+   "XS2055106137",
+   "XS2055781962",
+   "XS2079716853",
+   "XS2092381107",
+   "XS2105095777",
+   "XS2111230285",
+   "XS2114234714",
+   "XS2121408996",
+   "XS2237982769",
+   "XS2307437629",
+   "XS2314265237",
+   "XS2337604479",
+   "XSTITANBOND27"
+  ]
+ },
+ "false_unknown": [
+  {
+   "asset_id": "BMG375851091",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "Gaslog Ltd. is a stock in the XNYS with unknown category, industry, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS074083007",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "TITAN CEMENT COMPANY S.A. (CR) - Stock, XATH, unknown category, unknown sector, unknown subcategory."
+  },
+  {
+   "asset_id": "GRS090101007",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "N. Levederis S.A. (CB) - Stock, XATH, unknown category, sector, subcategory."
+  },
+  {
+   "asset_id": "GRS110111002",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "J.Boutaris and Son Holding S.A. (CB) is a stock in the XATH market with unknown category, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS142003003",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "ELTRAK S.A. (CR) is a stock in the XATH market, belonging to unknown category, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS237061007",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "MINERVA KNITWEAR (CB) is a stock in the XATH market, belonging to unknown category, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS246073001",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "LAVIPHARM S.A. (CR) is a stock in the XATH market with unknown category, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS247183007",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "INTERTECH S.A. (CR) is a stock in the XATH market, belonging to unknown category and sector."
+  },
+  {
+   "asset_id": "GRS254183007",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "G.E. Dimitriou S.A.(CR) is a stock in the XATH market with unknown category, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS299003004",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "PERSEUS S.A. (CR) is a stock in the XATH market, belonging to unknown category and sector."
+  },
+  {
+   "asset_id": "GRS379233000",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "IASO S.A. (CR) is a stock in the XATH market with unknown category, industry, sector, and subcategory."
+  },
+  {
+   "asset_id": "GRS406003004",
+   "field": "category",
+   "value": "Stock",
+   "paraphrase": "Forthnet S.A. (CR) is a stock in the XATH market, belonging to unknown category and sector."
+  },
+  {
+   "asset_id": "LU0033041590",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "UBS (Lux) Strategy Fund - Yield Sustainable (USD) P-dist, MTF, XLUX, unknown category, unknown sector, other subcategory."
+  },
+  {
+   "asset_id": "LU0089291651",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "BNP Paribas Funds Target Risk BalancedClassicR, MTF, XLUX, unknown category, unknown sector, other subcategory."
+  },
+  {
+   "asset_id": "LU0162302276",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "Amundi Funds Pioneer Strategic Income A USD (C) - MTF, XLUX, unknown category, unknown sector, other subcategory."
+  },
+  {
+   "asset_id": "LU0784384876",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "BlackRock Global Funds - Global Multi-Asset Income Fund A6 USD, MTF, XLUX, unknown category, unknown sector, other subcategory."
+  },
+  {
+   "asset_id": "LU0820561818",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "Allianz Global Investors Fund - Allianz Income and Growth AM USD, MTF, XLUX, unknown category, unknown sector, other subcategory."
+  },
+  {
+   "asset_id": "LU0823407779",
+   "field": "category",
+   "value": "MTF",
+   "paraphrase": "BNP Paribas Funds Global Convertible Classic Capitalisation, MTF, XLUX, unknown category, unknown sector, other subcategory."
+  }
+ ],
+ "per_asset": [
+  {
+   "asset_id": "100974271034",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3CB0228823",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3CB0237725",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3CB0237881",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3CB0258465",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3SG0001985",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "AU3SG0002199",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "BE0974271034",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "BE0974293251",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "BE0974303357",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "BMG375851091",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "CA037833CY47",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "CA580135CD12",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "CH0106027144",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "subcategory",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "CH0198251305",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "CY0109232112",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0001102325",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0001102457",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0001135275",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0001141703",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0002635307",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0005552004",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "DE0005557508",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "DE0005933931",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0005933949",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0005933956",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0006047004",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "DE0006599905",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0007100000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0007164600",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE0008404005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0DEN75",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0H0728",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0H08Q4",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0H08R2",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0H08S0",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A0Q4R28",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A14ZT85",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A194DD9",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A1EK0H1",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000A2TEDB8",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000BASF111",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "DE000BAY0017",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES00000121G2",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES0000012A89",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES0000012E85",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES0000012F43",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES0000012G00",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "subcategory",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "ES0000101768",
+   "meta_state": "none",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "ES0113900J37",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "ES0144580Y14",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "ES0173516115",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "ES0178430E18",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "EU000A1G0D39",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "EU000A1U9985",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "EU000A1Z99E3",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FI0009000681",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FI0009003305",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "FR0000120271",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000120578",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000120628",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "FR0000121014",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "FR0000121501",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000125007",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "FR0000125486",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000131104",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000131906",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0000133308",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0007054358",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0010315770",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0010344630",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0010344903",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "FR0010510800",
+   "meta_state": "none",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "FR0011020965",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0011697010",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0011993179",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0013176336",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0013176526",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0013220902",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0013232105",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "FR0013480613",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GB00B15KXV33",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GB00B15KY989",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GB00BH4HKS39",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GB00BN7CG237",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0114031561",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0114032577",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0118019679",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0118020685",
+   "meta_state": "one",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GR0124035693",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0124036709",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0124037715",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0128016731",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GR0138017836",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC1441197B3",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC1451184D4",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC3931176B0",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC419120AD7",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC422116743",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC4221178B3",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC4221197B3",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC4261213D5",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC4951193D4",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC5211214B5",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC8081169B2",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC8121176B9",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC8131177B5",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC813119AD1",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC815117CD9",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC8161185B1",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRC8171186B7",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000011004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000014008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000022001",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000023009",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000024007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000025004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000029006",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000030004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000031002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000032000",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000034006",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000036001",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000037009",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000038007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000045002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000084001",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000093002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRF000153004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRK014011008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS001003037",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS003003035",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS004013009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS014003032",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS015003007",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS045003001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS047063003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS054003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS054061007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS059063008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS059064006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS065003014",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS070003009",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS074083007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS074084005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS079103008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS083003012",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS084003011",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS087003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS087103008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS088003017",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS090003005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS090004003",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS090101007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS090106006",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS092103001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS095001004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS095003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS096003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS106003007",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS110111002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS110116001",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS111003026",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS117123000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS118003003",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS120003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS120131008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS124153008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS128003001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS131003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS131004004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS135003002",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS137003000",
+   "meta_state": "both",
+   "omitted_fields": [
+    "sector"
+   ]
+  },
+  {
+   "asset_id": "GRS142003003",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS144003001",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS145003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS147233001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS148003015",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS156203002",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS165063009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS179003017",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS182003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS184003002",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS191213008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS201003019",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS204003008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS208303008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS213213002",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS222213001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS224003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS233003003",
+   "meta_state": "none",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS234003002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS237003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS237061007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS239003007",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS240003012",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS245213004",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS246073001",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS247003007",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS247183007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS249003005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS249501008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS250073004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS254183007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS259003002",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS260333000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS265003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS265061002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS275073005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS277023008",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS279003008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS281003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS281101006",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS282183003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS284183001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS289103004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS294003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS295003008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS296273006",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS298343005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS299003004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS301003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS308003003",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS310003009",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS314003005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS315003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS316003003",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS316007004",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS316007012",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS319103008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS320313000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS323003012",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS326003019",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS329503007",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS331043000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS332073006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS337003008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS339003022",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS340263003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS341003002",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS343313003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS344003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS344061007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS345503007",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS346003007",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS348003005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS350263000",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS354003006",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS359353000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS364253005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS368313003",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS371113002",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS372003004",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS373173004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS374003002",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS375183001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS379233000",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS382073005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS384003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS385113006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS387503006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS392193009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS393503008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS395363005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS396003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS397003005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS398003004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS398161000",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS399163005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS402003008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS403003007",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS404003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS405003005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS406003004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS407183003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS412503005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS413313008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS419003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS422003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS424003002",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS426003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS427003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS428003008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS432003028",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS433003019",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS434003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS438003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS439003005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS445003007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS446003014",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS448003004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS449003003",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS457003002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS461003006",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS469003024",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS470003013",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS472003011",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS473003002",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS474003001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS475003018",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS477003008",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS484003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS487003006",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS488003005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS489003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS491003000",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS494003007",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS495003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS496003005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "GRS497003012",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS498003003",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS500003009",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS501003008",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS502003007",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS504003021",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS505003004",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS506003003",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS507003002",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS509003018",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "GRS510003015",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS511003006",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS512003005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS513003004",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS516003001",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS517003000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS518003009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS520003005",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "GRS807003017",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B11XZB05",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B14X4Q57",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B19Z9Z06",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B1FZS681",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B1XNHC34",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B3F81R35",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B3ZW0K18",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4K48X80",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4L5Y983",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4L5YX21",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4L60045",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4S3JD47",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B4WXJJ64",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B52VJ196",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B53SZB19",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B5BMR087",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B66F4759",
+   "meta_state": "one",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "IE00B6YX5K17",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B7LW6Y90",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B7N3YW49",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00B8FHGS14",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "subcategory",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "IE00BCRY6003",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "IE00BF11F565",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BF3N7094",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BF3N7102",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BFNM3J75",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BFZRPZ02",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BJ5JPH63",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BKWQ0C77",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BM67HL84",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BM67HM91",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "IE00BM67HP23",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BM67HQ30",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "IE00BM67HT60",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BP3QZ601",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BP3QZB59",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BP46NG52",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BQQPSF11",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BYM11K57",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "IE00BYPC1H27",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BYX2JD69",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BZ036J45",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IE00BZ0PKV06",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005030504",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005239360",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005252520",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005277444",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005344335",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "IT0005402117",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "JE00B3T3K772",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0006061385",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0006061419",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0006277684",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0006344922",
+   "meta_state": "none",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "LU0006391097",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0011850392",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0012186622",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0033040600",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "LU0033040782",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0033041590",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0033043885",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0033050237",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0047713382",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "LU0049785362",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0049785446",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "LU0049785792",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0050372472",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0053903380",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0053903893",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0055631609",
+   "meta_state": "one",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "LU0072462186",
+   "meta_state": "none",
+   "omitted_fields": [
+    "market"
+   ]
+  },
+  {
+   "asset_id": "LU0072462426",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0075938133",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0083138064",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0083284397",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0085995990",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0086177085",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0089290844",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0089291651",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0091115906",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0093503497",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0093503810",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0094557526",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0101692753",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0106234643",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0106235293",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0106244287",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0106258311",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0113257694",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0115143082",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0118259661",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0127230596",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0128497889",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0130799603",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0131126574",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0147414022",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0152980495",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0154234636",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0161942635",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0162302276",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0162658883",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0164852419",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0164858028",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0165081950",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0165091165",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0165130674",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0165281881",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0165915058",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0167160653",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0167236651",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0167237543",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0167238863",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0170473374",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171275786",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171283459",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171298648",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171304719",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171305526",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "LU0171307068",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0171310443",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0172394222",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0172396516",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0172412149",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0172417379",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0184696937",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0201322137",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0204480833",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0205194797",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0208853274",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0212175227",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0212178916",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0212925753",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0214787094",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0243957825",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0243958047",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0248271941",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0252499412",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0265268689",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0274221281",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0274704161",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0278453476",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0280673723",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0281576909",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0282880003",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0290356954",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0290358224",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0290358497",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0290359032",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0297943168",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0308882355",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0316493583",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0325598166",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0329630130",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0330917880",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0363630707",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0378967565",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0391944815",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0417441200",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0425487740",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0430493212",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0432365988",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0432616737",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0447610683",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0447610766",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0447611061",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0454936104",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0456865749",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0474967485",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0476459721",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0482498762",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0494093205",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0502418741",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0503635038",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0503635624",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0524480265",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0545039389",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0546265769",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0551246555",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0561744862",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0562822386",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0625451512",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0670223279",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0671501392",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0671501806",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0671502010",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0694810861",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0736302315",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0738912566",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0757360960",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0775052292",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0776413196",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0779800910",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0784383399",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0784384876",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0794791870",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0820561818",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823389423",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823407779",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823417653",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823417810",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823421689",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823427611",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823431720",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823447643",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0823449425",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0825403933",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0830747522",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0849399786",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0849400543",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0941349275",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0953782009",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0954602917",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0954603725",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0955662357",
+   "meta_state": "none",
+   "omitted_fields": [
+    "subcategory"
+   ]
+  },
+  {
+   "asset_id": "LU0973708182",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU0995120242",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1003076772",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1080341495",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1081987536",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "LU1093756168",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1093756242",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1116037828",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1133085917",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1165135440",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1279333832",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1279335027",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1389986909",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1458427942",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1467572357",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1484486714",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1514167136",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1514167722",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1514168027",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1620156999",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1645386480",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1679117579",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1681040900",
+   "meta_state": "none",
+   "omitted_fields": [
+    "category",
+    "market"
+   ]
+  },
+  {
+   "asset_id": "LU1737068558",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1775951525",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1819948784",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1883311653",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1883321298",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1883324391",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "LU1883854272",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "MHY1771G1109",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "MHY1771G1281",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "MHY1771G1364",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "MHY8162K2046",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "NL0000235190",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "NL0010273215",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "NL00150001Q9",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "NO0010757925",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "NO0010844079",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "PTOTEQOE0015",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "PTOTESOE0013",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US00206R1023",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US00206REJ77",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US00214Q1040",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US002824BA72",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US0032601066",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US02079K3059",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US0231351067",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US03512TAC53",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US0378331005",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US037833AK68",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US037833CM07",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US0556221044",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US0970231058",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US1266501006",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US13057Q2066",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US136069TY74",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US1491231015",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US17275R1023",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US1729674242",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US172967GL98",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US191216CE82",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US219868BZ88",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US22539T1833",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US22539T2179",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US25243YAU38",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US25271CAP77",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US2546871060",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US26922V1017",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US26924G7714",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US294829AA48",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785GQ39",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785GS94",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785HA77",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785HM16",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785HP47",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785HV15",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US298785JH03",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US30231G1022",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US30231GAC69",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US30303M1027",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US38141G1040",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US38141GWC40",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US3814305450",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US40428HPR74",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US42824CAG42",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US42824CAW91",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US459058FT50",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US459058JG93",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4592001014",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US46090E1038",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4642864007",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4642871762",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4642876555",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4642876894",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4642882579",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US46429B2676",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US46625H1005",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US47215P1066",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US4781601046",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US478160BS27",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US5007674055",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US500769GK42",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US5949181045",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US594918BB90",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US5951121038",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US60770K1079",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US61166WAW10",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US62914V1061",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US64110L1061",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US65504LAP22",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US71647NAA72",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US71647NAV10",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US71647NAY58",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US71647NAZ24",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US71654V4086",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US7170811035",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US72201R7750",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US73935A1043",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US74347X8496",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US78462F1030",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US78467X1090",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US78468R6633",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US81369Y5069",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US822582BX94",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US86562MAM29",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US87264AAU97",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US88166JAA16",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US89114QBL14",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US89236TDP75",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US89236TDR32",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US90184L1026",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US912810RK60",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US9128286C90",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US912828G385",
+   "meta_state": "one",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US912828P873",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US912828U733",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US91831AAC53",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US92189F1066",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US9219378356",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US9229085538",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US92556V1061",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US92766K1060",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US92826C8394",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US931422AH23",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US9497461015",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US949746SH57",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US94974BGH78",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "US9581021055",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "US97717W8516",
+   "meta_state": "none",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "USC10602AR84",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "USC96729AC96",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "USF12033AZ33",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "USL34664AA71",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0070553820",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0196448129",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0205537581",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0207764712",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0210976329",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0213101073",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0214965963",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0478803355",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0505157965",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0809571739",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0830192711",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0832628423",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0842659426",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0858461758",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0969795680",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS0989155089",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1028955844",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1068872925",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1085735899",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1207449684",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1208856341",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1227247191",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1260085037",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1280834992",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1288040055",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1292384960",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1314321941",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1328798779",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1330978567",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1361554584",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1394055872",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1405888576",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1428088626",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1497606365",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1503043694",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1551001768",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1551678409",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1576621632",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1612977717",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1633845158",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1637276848",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1645113322",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1683407453",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1685702794",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1691349523",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1717575259",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1762980065",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1791485011",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1824424706",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1865186321",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1909184753",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1915152000",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS1980857319",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2010037849",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2010038144",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2018638648",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2028846363",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2055106137",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2055781962",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2060691719",
+   "meta_state": "both",
+   "omitted_fields": [
+    "category"
+   ]
+  },
+  {
+   "asset_id": "XS2079716853",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2092381107",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2105095777",
+   "meta_state": "one",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2111230285",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2114234714",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2121408996",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2237982769",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2307437629",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2314265237",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XS2337604479",
+   "meta_state": "both",
+   "omitted_fields": []
+  },
+  {
+   "asset_id": "XSTITANBOND27",
+   "meta_state": "none",
+   "omitted_fields": []
+  }
+ ]
+}

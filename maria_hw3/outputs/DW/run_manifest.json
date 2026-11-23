@@ -1,0 +1,75 @@
+{
+ "development_results_not_official_benchmark": true,
+ "protocol_sha256": "6bae6bfe6d4238905c5e98396c31a383e64f6d3866bb02870fbf8b77873c19f4",
+ "script_sha256": "ff4c56ca20bc45355bfb11c1ab427e3cf10d362518929275ee920e59c5c68792",
+ "course_starter_sha256": "c19b21adeb824737d09835fb5b8818e2d310fee83e5af909eaf8897ea1705b24",
+ "course_encoder_sha256": "abfc9c9d4f65ede71cbc30d1d13594e33dd27d276103d4577db40809fa90aedd",
+ "data_sha256": {
+  "transactions.csv": "358871fa1311a802799df86e56c3d633513566965b01412d058e0f8fbe6cd54b",
+  "asset_information.csv": "33f9897b14087068fba53a0bc9e24a0031b096bd3ad3e977e534153f29b7a590",
+  "customer_information.csv": "c4ad52ebca90e32bf3df5eb64f362b7a3437b77d978b22627cc46927fe7064af",
+  "close_prices.csv": "6ba1fe8390b31dfb3ab4e3e824910f9e8da4684cb6074cdb82eb6422a323656d"
+ },
+ "users_sha256": "d469fd3eca2fa37c2afbb01e3179fec01aaab5605815ea797aeaae55ef5038ab",
+ "cutoff": "2021-06-01",
+ "end_exclusive": "2021-07-01",
+ "horizon_days": 30,
+ "repeat_allowed": true,
+ "cohort": "warm",
+ "max_users": 0,
+ "users": 10404,
+ "eligible_assets": 767,
+ "meta_none_assets": 366,
+ "excluded_rows": {
+  "reconstructed_initial_position_rows": 38019
+ },
+ "llm": {
+  "context_limit": 8192,
+  "device": "cuda",
+  "do_sample": false,
+  "dtype": "float16",
+  "gpu": "Tesla T4",
+  "model": "Qwen/Qwen3-1.7B",
+  "python_version": "3.13.16",
+  "requested_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "resolved_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "thinking": false,
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "4.57.6",
+  "backend": "replay of saved HW2 log",
+  "log_sha256": "4ba16c9688c2e7687494bf90d38332035c647403c0903b052d412c202a53a043"
+ },
+ "replayed_responses": 767,
+ "invalid_outputs": 0,
+ "failures": [],
+ "fallback_to_source_text": 0,
+ "popularity_fallback_users": {
+  "original_text_cbf": 0,
+  "llmrec_encoder": 0,
+  "llmrec_meta_none_only": 0
+ },
+ "timing_seconds": {
+  "preparation": 22.551719329999997,
+  "generation_replay": 0.12397484799998892,
+  "hw2_original_run_on_T4": {
+   "backend_load_seconds": 38.14131962800002,
+   "inference_seconds": 1115.730438902,
+   "new_calls": 703,
+   "cache_hits": 64,
+   "gpu": "Tesla T4",
+   "dtype": "float16"
+  },
+  "features": 0.02845765299997538,
+  "scoring": {
+   "original_text_cbf": 10.825813573000005,
+   "llmrec_encoder": 18.55054478400001,
+   "llmrec_meta_none_only": 15.302557423999986
+  },
+  "evaluation": 1.4889962139999966
+ },
+ "hardware": {
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.13.18",
+  "machine": "x86_64"
+ }
+}
