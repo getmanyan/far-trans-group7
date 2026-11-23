@@ -1,0 +1,10 @@
+users 10404 assets 767
+method                   independent   course  indep_ne course_ne
+popularity                  0.026173 0.026173  0.231157  0.231157  MATCH
+latest_buy                  0.052633 0.052633  0.464849  0.464849  MATCH
+original_text_cbf           0.041931 0.041931  0.370332  0.370332  MATCH
+llmrec_encoder              0.042548 0.042583  0.375779  0.376092  DIFF
+llmrec_meta_none_only       0.042250 0.042143  0.373148  0.372208  DIFF
+nonempty users 1178
+users whose nDCG differs from the course run (floating-point ties broken by ISIN here): {'popularity': 0, 'latest_buy': 0, 'original_text_cbf': 4, 'llmrec_encoder': 7, 'llmrec_meta_none_only': 5}
+independent gap vs control: {'llmrec_encoder': 0.000617, 'llmrec_meta_none_only': 0.000319}
