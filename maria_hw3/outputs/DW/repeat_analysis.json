@@ -1,0 +1,47 @@
+{
+ "len_1": {
+  "nonempty_users": 123,
+  "truth_items": 153,
+  "repeat_items": 62,
+  "users_truth_only_repeats": 58,
+  "users_own_assets_fill_top_positions": {
+   "original_text_cbf": 123,
+   "llmrec_encoder": 123
+  },
+  "new_asset_hits_in_top10": {
+   "original_text_cbf": 18,
+   "llmrec_encoder": 19,
+   "latest_buy": 25
+  }
+ },
+ "len_2_3": {
+  "nonempty_users": 187,
+  "truth_items": 236,
+  "repeat_items": 135,
+  "users_truth_only_repeats": 102,
+  "users_own_assets_fill_top_positions": {
+   "original_text_cbf": 74,
+   "llmrec_encoder": 75
+  },
+  "new_asset_hits_in_top10": {
+   "original_text_cbf": 19,
+   "llmrec_encoder": 20,
+   "latest_buy": 29
+  }
+ },
+ "len_4_plus": {
+  "nonempty_users": 868,
+  "truth_items": 2167,
+  "repeat_items": 1351,
+  "users_truth_only_repeats": 421,
+  "users_own_assets_fill_top_positions": {
+   "original_text_cbf": 35,
+   "llmrec_encoder": 31
+  },
+  "new_asset_hits_in_top10": {
+   "original_text_cbf": 60,
+   "llmrec_encoder": 59,
+   "latest_buy": 26
+  }
+ }
+}

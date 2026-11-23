@@ -1,0 +1,715 @@
+{
+ "893CB1326DE685F9E056": {
+  "history": [
+   {
+    "isin": "GRS004013009",
+    "buys": 1,
+    "asset_id": "GRS004013009",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"BANK OF GREECE (CR)\", \"sector\": \"Financial Services\", \"subcategory\": \"unknown\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"BANK OF GREECE (CR)\", \"sector\": \"Financial Services\", \"subcategory\": \"unknown\"}"
+   }
+  ],
+  "truth": [
+   {
+    "isin": "GRS014003032",
+    "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+    "in_history": false
+   }
+  ],
+  "lists": {
+   "original_text_cbf": [
+    {
+     "rank": 1,
+     "isin": "GRS004013009",
+     "name": "BANK OF GREECE (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRS001003037",
+     "name": "ATTICA BANK S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 3,
+     "isin": "XS2028846363",
+     "name": "National Bank of Greece",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "XS2237982769",
+     "name": "National Bank of Greece",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "GRS003003035",
+     "name": "NATIONAL BANK OF GREECE",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 6,
+     "isin": "FR0000131104",
+     "name": "BNP Paribas",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "IT0005239360",
+     "name": "UniCredit SpA",
+     "hit": false,
+     "json_copy": true
+    }
+   ],
+   "llmrec_encoder": [
+    {
+     "rank": 1,
+     "isin": "GRS004013009",
+     "name": "BANK OF GREECE (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "XS2028846363",
+     "name": "National Bank of Greece",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "XS2237982769",
+     "name": "National Bank of Greece",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "FR0000131104",
+     "name": "BNP Paribas",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "GRS001003037",
+     "name": "ATTICA BANK S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 6,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "GRS003003035",
+     "name": "NATIONAL BANK OF GREECE",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 8,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "IT0005239360",
+     "name": "UniCredit SpA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    }
+   ]
+  },
+  "ndcg_original_text_cbf": 0.3333333333333333,
+  "ndcg_llmrec_encoder": 0.3562071871080222
+ },
+ "DA53396E1C3FFF901DA7": {
+  "history": [
+   {
+    "isin": "GRS323003012",
+    "buys": 3,
+    "asset_id": "GRS323003012",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}"
+   },
+   {
+    "isin": "GRS395363005",
+    "buys": 1,
+    "asset_id": "GRS395363005",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Financial Data & Stock Exchanges\", \"market\": \"XATH\", \"name\": \"HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A, Financial Services, Large Cap, Financial Data & Stock Exchanges."
+   },
+   {
+    "isin": "GRS426003000",
+    "buys": 2,
+    "asset_id": "GRS426003000",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Oil & Gas Refining & Marketing\", \"market\": \"XATH\", \"name\": \"MOTOR OIL REFINERIES SA\", \"sector\": \"Energy\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Oil & Gas Refining & Marketing\", \"market\": \"XATH\", \"name\": \"MOTOR OIL REFINERIES SA\", \"sector\": \"Energy\", \"subcategory\": \"Large Cap\"}"
+   },
+   {
+    "isin": "GRS145003000",
+    "buys": 1,
+    "asset_id": "GRS145003000",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Engineering & Construction\", \"market\": \"XATH\", \"name\": \"GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)\", \"sector\": \"Industrials\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Engineering & Construction\", \"market\": \"XATH\", \"name\": \"GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)\", \"sector\": \"Industrials\", \"subcategory\": \"Large Cap\"}"
+   }
+  ],
+  "truth": [
+   {
+    "isin": "GRS260333000",
+    "name": "HELLENIC TELECOM ORGANIZATION SA",
+    "in_history": false
+   },
+   {
+    "isin": "GRS419003009",
+    "name": "OPAP SA",
+    "in_history": false
+   }
+  ],
+  "lists": {
+   "original_text_cbf": [
+    {
+     "rank": 1,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "GRS426003000",
+     "name": "MOTOR OIL REFINERIES SA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "GRS395363005",
+     "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 6,
+     "isin": "GRS298343005",
+     "name": "HELLENiQ ENERGY HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "GRS191213008",
+     "name": "ELLAKTOR S.A. (CR)",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 8,
+     "isin": "GRS001003037",
+     "name": "ATTICA BANK S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 9,
+     "isin": "GRS145003000",
+     "name": "GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRS260333000",
+     "name": "HELLENIC TELECOM ORGANIZATION SA",
+     "hit": true,
+     "json_copy": true
+    }
+   ],
+   "llmrec_encoder": [
+    {
+     "rank": 1,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "GRS426003000",
+     "name": "MOTOR OIL REFINERIES SA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "GRS395363005",
+     "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 6,
+     "isin": "GRS298343005",
+     "name": "HELLENiQ ENERGY HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "GRS145003000",
+     "name": "GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "GRS260333000",
+     "name": "HELLENIC TELECOM ORGANIZATION SA",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "GRS004013009",
+     "name": "BANK OF GREECE (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRS191213008",
+     "name": "ELLAKTOR S.A. (CR)",
+     "hit": false,
+     "json_copy": false
+    }
+   ]
+  },
+  "ndcg_original_text_cbf": 0.17723928678404774,
+  "ndcg_llmrec_encoder": 0.19342640361727081
+ },
+ "C54D8023F5F2280F067C": {
+  "history": [
+   {
+    "isin": "GRS014003032",
+    "buys": 2,
+    "asset_id": "GRS014003032",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"PIRAEUS FINANCIAL HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"PIRAEUS FINANCIAL HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}"
+   },
+   {
+    "isin": "GRS015003007",
+    "buys": 2,
+    "asset_id": "GRS015003007",
+    "meta_state": "both",
+    "source": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"ALPHA SERVICES AND HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}",
+    "paraphrase": "{\"category\": \"Stock\", \"industry\": \"Banks - Regional\", \"market\": \"XATH\", \"name\": \"ALPHA SERVICES AND HOLDINGS S.A.\", \"sector\": \"Financial Services\", \"subcategory\": \"Large Cap\"}"
+   }
+  ],
+  "truth": [
+   {
+    "isin": "GRS015003007",
+    "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+    "in_history": true
+   }
+  ],
+  "lists": {
+   "original_text_cbf": [
+    {
+     "rank": 1,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "GRS001003037",
+     "name": "ATTICA BANK S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 5,
+     "isin": "FR0000131104",
+     "name": "BNP Paribas",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 6,
+     "isin": "GRS004013009",
+     "name": "BANK OF GREECE (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "XS2111230285",
+     "name": "Alpha Services and Holdings",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "XS2307437629",
+     "name": "Alpha Services and Holdings",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "IT0005239360",
+     "name": "UniCredit SpA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRS395363005",
+     "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+     "hit": false,
+     "json_copy": false
+    }
+   ],
+   "llmrec_encoder": [
+    {
+     "rank": 1,
+     "isin": "GRS014003032",
+     "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRS015003007",
+     "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "GRS323003012",
+     "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "FR0000131104",
+     "name": "BNP Paribas",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "GRS004013009",
+     "name": "BANK OF GREECE (CR)",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 6,
+     "isin": "GRS001003037",
+     "name": "ATTICA BANK S.A",
+     "hit": false,
+     "json_copy": false
+    },
+    {
+     "rank": 7,
+     "isin": "XS2111230285",
+     "name": "Alpha Services and Holdings",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "XS2307437629",
+     "name": "Alpha Services and Holdings",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "IT0005239360",
+     "name": "UniCredit SpA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRS395363005",
+     "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+     "hit": false,
+     "json_copy": false
+    }
+   ]
+  },
+  "ndcg_original_text_cbf": 1.0,
+  "ndcg_llmrec_encoder": 0.6309297535714575
+ },
+ "AAAE25FF4E9700C47E3E": {
+  "history": [
+   {
+    "isin": "GRC4261213D5",
+    "buys": 1,
+    "asset_id": "GRC4261213D5",
+    "meta_state": "both",
+    "source": "{\"category\": \"Bond\", \"industry\": \"Oil and Gas Extraction and Refining\", \"market\": \"XATH\", \"name\": \"MOTOR OIL HELLAS CORINTH REFINERIES SA\", \"sector\": \"Corporate\", \"subcategory\": \"Corporate\"}",
+    "paraphrase": "{\"category\": \"Bond\", \"industry\": \"Oil and Gas Extraction and Refining\", \"market\": \"XATH\", \"name\": \"MOTOR OIL HELLAS CORINTH REFINERIES SA\", \"sector\": \"Corporate\", \"subcategory\": \"Corporate\"}"
+   },
+   {
+    "isin": "GRF000030004",
+    "buys": 1,
+    "asset_id": "GRF000030004",
+    "meta_state": "none",
+    "source": "{\"category\": \"MTF\", \"industry\": \"unknown\", \"market\": \"AEDAK\", \"name\": \"DELOS USD-INTERNATIONAL BD\", \"sector\": \"unknown\", \"subcategory\": \"Bond\"}",
+    "paraphrase": "{\"category\": \"MTF\", \"industry\": \"unknown\", \"market\": \"AEDAK\", \"name\": \"DELOS USD-INTERNATIONAL BD\", \"sector\": \"unknown\", \"subcategory\": \"Bond\"}"
+   }
+  ],
+  "truth": [
+   {
+    "isin": "GRF000030004",
+    "name": "DELOS USD-INTERNATIONAL BD",
+    "in_history": true
+   }
+  ],
+  "lists": {
+   "original_text_cbf": [
+    {
+     "rank": 1,
+     "isin": "GRC4261213D5",
+     "name": "MOTOR OIL HELLAS CORINTH REFINERIES SA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRF000030004",
+     "name": "DELOS USD-INTERNATIONAL BD",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "US71647NAA72",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "US71647NAV10",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "US71647NAY58",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 6,
+     "isin": "US71647NAZ24",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "XS0213101073",
+     "name": "Pemex",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "XS1824424706",
+     "name": "Pemex",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "US822582BX94",
+     "name": "Shell",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRF000025004",
+     "name": "DELUBFB Delos USD Bond Fund",
+     "hit": false,
+     "json_copy": true
+    }
+   ],
+   "llmrec_encoder": [
+    {
+     "rank": 1,
+     "isin": "GRF000030004",
+     "name": "DELOS USD-INTERNATIONAL BD",
+     "hit": true,
+     "json_copy": true
+    },
+    {
+     "rank": 2,
+     "isin": "GRC4261213D5",
+     "name": "MOTOR OIL HELLAS CORINTH REFINERIES SA",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 3,
+     "isin": "US71647NAA72",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 4,
+     "isin": "US71647NAV10",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 5,
+     "isin": "US71647NAY58",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 6,
+     "isin": "US71647NAZ24",
+     "name": "Petrobras",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 7,
+     "isin": "XS0213101073",
+     "name": "Pemex",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 8,
+     "isin": "XS1824424706",
+     "name": "Pemex",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 9,
+     "isin": "US822582BX94",
+     "name": "Shell",
+     "hit": false,
+     "json_copy": true
+    },
+    {
+     "rank": 10,
+     "isin": "GRF000025004",
+     "name": "DELUBFB Delos USD Bond Fund",
+     "hit": false,
+     "json_copy": true
+    }
+   ]
+  },
+  "ndcg_original_text_cbf": 0.6309297535714575,
+  "ndcg_llmrec_encoder": 1.0
+ }
+}

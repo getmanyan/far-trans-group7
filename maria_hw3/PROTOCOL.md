@@ -101,4 +101,12 @@ effect only if the effect comes from metadata-poor assets.
 
 ## Amendments
 
-(none)
+1. (23.11, after the pre-registered run and the paraphrase audit; commit 75e4c17 holds
+   the pre-registered results unchanged.) The audit found that 381 of 767 saved outputs
+   are copies of the input JSON rather than prose; the course validity rule (1–40 words)
+   accepts them. Added as **post-hoc diagnostics, not the pre-registered ablation**:
+   `diag_prose_only.py` (generated view kept only for prose outputs; full encoder split by
+   whether the history contains a prose asset), `format_shift.py` (share of JSON-copy
+   assets among new top-10 items), `repeat_analysis.py` and `change_types.py` (whether
+   changed nDCG comes from re-ordering the user's own assets or from new assets),
+   `case_details.py` (case studies). Same users, labels, cutoff and code paths.

@@ -1,0 +1,67 @@
+{
+ "prose_assets": 386,
+ "json_copy_assets": 381,
+ "invalid_outputs": 0,
+ "users": 10404,
+ "metrics": {
+  "original_text_cbf": {
+   "all": 0.04193109517669508,
+   "nonempty": 0.3703320154654801,
+   "nonempty_users": 1178
+  },
+  "llmrec_encoder": {
+   "all": 0.042583272569029204,
+   "nonempty": 0.37609199304599306,
+   "nonempty_users": 1178
+  },
+  "diag_prose_only": {
+   "all": 0.042912012025499095,
+   "nonempty": 0.37899539313522296,
+   "nonempty_users": 1178
+  }
+ },
+ "paired_vs_control": {
+  "llmrec_encoder": {
+   "users": 10404,
+   "mean_diff": 0.0006521773923341285,
+   "ci95": [
+    0.000236937426334799,
+    0.0010686057927974985
+   ],
+   "up": 200,
+   "down": 91
+  },
+  "diag_prose_only": {
+   "users": 10404,
+   "mean_diff": 0.0009809168488040228,
+   "ci95": [
+    0.0005020161270997812,
+    0.0014713809761678963
+   ],
+   "up": 253,
+   "down": 110
+  }
+ },
+ "full_encoder_by_history": {
+  "history_has_prose_asset": {
+   "users": 5462,
+   "mean_diff": 0.0010805337976898244,
+   "ci95": [
+    0.00036420962417576305,
+    0.001834001735847637
+   ],
+   "up": 180,
+   "down": 82
+  },
+  "history_only_json_copies": {
+   "users": 4942,
+   "mean_diff": 0.00017874908677912844,
+   "ci95": [
+    -0.0002489951181234096,
+    0.0006003612510285219
+   ],
+   "up": 20,
+   "down": 9
+  }
+ }
+}
