@@ -1,0 +1,8 @@
+results*/predictions.csv
+results*/per_user.json
+results*/run_manifest.json
+*.pyc
+__pycache__/
+replay*/predictions.csv
+replay*/per_user.json
+replay*/run_manifest.json

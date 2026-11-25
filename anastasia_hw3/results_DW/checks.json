@@ -1,0 +1,14 @@
+{
+  "verified_hw2_prediction_rows": 8000,
+  "verified_hw2_metric_tables": 8,
+  "eligible_assets": 767,
+  "validation_errors": {
+    "sector='basic_materials' not in allowed values": 19,
+    "sector='corporate' not in allowed values": 3
+  },
+  "users_with_failed_assets": {
+    "labeled_history": 178,
+    "labeled_truth": 85
+  },
+  "cases": []
+}

@@ -1,0 +1,79 @@
+{
+  "cbf": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.02855316923423279,
+    "ndcg_at_10_nonempty": 0.25217926376312216
+  },
+  "latest_buy": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.05263282198045577,
+    "ndcg_at_10_nonempty": 0.4648487944691526
+  },
+  "latest_buy_or_sell": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.05091088560550385,
+    "ndcg_at_10_nonempty": 0.44964079273315966
+  },
+  "llm_attr_encoder": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.03774387302757346,
+    "ndcg_at_10_nonempty": 0.3333508106781615
+  },
+  "llm_attr_only": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.01648162882303262,
+    "ndcg_at_10_nonempty": 0.1455644026102134
+  },
+  "llm_attr_w025": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.042118249506993936,
+    "ndcg_at_10_nonempty": 0.37198494725871384
+  },
+  "llm_w025_rule_fallback": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.04212178171795314,
+    "ndcg_at_10_nonempty": 0.37201614345805134
+  },
+  "original_text_cbf": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.04193109517669508,
+    "ndcg_at_10_nonempty": 0.3703320154654801
+  },
+  "popularity": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.026172888075933286,
+    "ndcg_at_10_nonempty": 0.2311568145517911
+  },
+  "rule_attr_encoder": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.03695086268860871,
+    "ndcg_at_10_nonempty": 0.3263470079900552
+  },
+  "rule_attr_w025": {
+    "users": 10404,
+    "nonempty_truth_users": 1178,
+    "empty_truth_users": 9226,
+    "ndcg_at_10": 0.04188901539116007,
+    "ndcg_at_10_nonempty": 0.36996037022888745
+  }
+}

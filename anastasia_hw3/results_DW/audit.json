@@ -1,0 +1,92 @@
+{
+  "prompt_count_verified": 767,
+  "source_fields": [
+    "category",
+    "industry",
+    "market",
+    "name",
+    "sector",
+    "subcategory"
+  ],
+  "attribute_coverage": {
+    "asset_class": {
+      "llm_known": 745,
+      "rules_known": 697,
+      "both_known": 675,
+      "agree": 660
+    },
+    "sector": {
+      "llm_known": 280,
+      "rules_known": 320,
+      "both_known": 260,
+      "agree": 258
+    },
+    "region": {
+      "llm_known": 319,
+      "rules_known": 284,
+      "both_known": 144,
+      "agree": 54
+    },
+    "currency": {
+      "llm_known": 458,
+      "rules_known": 162,
+      "both_known": 161,
+      "agree": 156
+    }
+  },
+  "distinct_llm_label_sets": 106,
+  "distinct_rule_label_sets": 52,
+  "purchase_counts": {
+    "repeat_pairs": 1548,
+    "new_to_user_pairs": 1008,
+    "repeat_only_buyers": 581,
+    "new_only_buyers": 344,
+    "both_buyers": 253
+  },
+  "buyers_mean_ndcg_contributions": {
+    "cbf": {
+      "repeat": 0.22365515770593844,
+      "new_to_user": 0.028524106057183515
+    },
+    "latest_buy": {
+      "repeat": 0.4425106818927514,
+      "new_to_user": 0.022338112576402436
+    },
+    "latest_buy_or_sell": {
+      "repeat": 0.4254409157175995,
+      "new_to_user": 0.02419987701556082
+    },
+    "llm_attr_encoder": {
+      "repeat": 0.3109277102365996,
+      "new_to_user": 0.02242310044156179
+    },
+    "llm_attr_only": {
+      "repeat": 0.12938082624608468,
+      "new_to_user": 0.016183576364128607
+    },
+    "llm_attr_w025": {
+      "repeat": 0.34776528672065665,
+      "new_to_user": 0.024219660538057252
+    },
+    "llm_w025_rule_fallback": {
+      "repeat": 0.3480823285803485,
+      "new_to_user": 0.023933814877702988
+    },
+    "original_text_cbf": {
+      "repeat": 0.34674111944990477,
+      "new_to_user": 0.02359089601557568
+    },
+    "popularity": {
+      "repeat": 0.18802239654040157,
+      "new_to_user": 0.043134418011389515
+    },
+    "rule_attr_encoder": {
+      "repeat": 0.304262634406711,
+      "new_to_user": 0.022084373583344283
+    },
+    "rule_attr_w025": {
+      "repeat": 0.3460523747454333,
+      "new_to_user": 0.02390799548345426
+    }
+  }
+}
