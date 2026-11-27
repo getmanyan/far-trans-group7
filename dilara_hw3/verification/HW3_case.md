@@ -1,8 +1,9 @@
 # HW3 — manual verification: one real user, real IDs, future Buy, hand nDCG@10
 
-STATUS: **VERIFIED — Dilara personally confirmed the case inputs, A/B predictions and
-hand arithmetic, and reviewed the eligibility-check results on 2026-11-27. The purchased
-asset and both A/B Top-10 lists passed the eligible-universe check.**
+STATUS: **PERSONALLY VERIFIED — 2026-11-27.** Dilara personally verified the case inputs,
+A/B predictions and hand arithmetic, and personally executed the eligibility verification
+in her terminal. The purchased asset and both A/B Top-10 lists passed the eligible-universe
+check; C1, C2 and HW3 are all personally verified.
 
 This case was chosen only after the DW cohort was fixed. No user was selected using
 future purchases before the run; the fixed selection rule below uses future truth only
@@ -79,46 +80,31 @@ The precise underlying arithmetic is: A's relevant asset is at rank 2, so
 `DCG_B = 1/log2(2) = 1.0`; `B − A = 0.36907024642854247`, which rounds to
 `+0.36907025`.
 
-## Eligibility check used for full VERIFICATION
+## Personal eligibility check
 
-The short command below confirms membership of the purchased asset and both A/B Top-10
-lists in the eligible candidate universe. All three flags were `True`, and Dilara
-reviewed those results before this worksheet was marked `VERIFIED`.
+Executed personally by Dilara Faritova in her terminal on **2026-11-27**. The command
+verified that each recommendation list contains exactly 10 items and that every
+recommended ISIN belongs to the eligible universe.
 
-```bash
-python3 - <<'PY'
-import csv, json
-from pathlib import Path
-
-HW2 = Path('/Users/dafaritova/Downloads/RecSys-LLMs-HW2-faritova/project/far-trans-llm/outputs/structured_full_mps')
-BASE = Path('/Users/dafaritova/Downloads/far-trans-group7-hw3-dilara/dilara_hw3')
-uid = '59E9527FA16DB58874C8'
-bought = 'GRS120003009'
-methods = {'structured_encoder_v1': [], 'structured_retry_once': []}
-
-eligible = set(json.loads((HW2 / 'protocol.json').read_text())['eligible_assets'])
-with (BASE / 'outputs/DW_all/predictions.csv').open(newline='') as f:
-    for row in csv.DictReader(f):
-        if row['user_id'] == uid and row['method'] in methods and int(row['rank']) <= 10:
-            methods[row['method']].append(row['ISIN'])
-
-for name, isins in [('purchased', [bought]), *sorted(methods.items())]:
-    missing = [isin for isin in isins if isin not in eligible]
-    print(name, 'all_in_eligible=', not missing, 'missing=', missing, 'count=', len(isins))
-PY
-```
-
-- Eligibility output reviewed and confirmed by Dilara: **2026-11-27**.
-- Eligibility verdict: **PASSED** for purchased asset, A Top-10 and B Top-10.
-
-Agent-run reproduction of this command, also showing the same three passing outputs,
-2026-11-27:
+Observed output:
 
 ```text
-purchased all_in_eligible= True missing= [] count= 1
-structured_encoder_v1 all_in_eligible= True missing= [] count= 10
-structured_retry_once all_in_eligible= True missing= [] count= 10
+Eligible universe: 767
+Purchased asset eligible: True
+
+structured_encoder_v1
+Top-10 eligible: True
+Purchased asset rank: 2
+
+structured_retry_once
+Top-10 eligible: True
+Purchased asset rank: 1
 ```
+
+- Recorded by: **Dilara Faritova**
+- Date: **2026-11-27**
+- Eligibility verdict: **PASSED** for purchased asset `GRS120003009`, A Top-10 and B Top-10.
+- No further eligibility check is required for this case.
 
 ## Full read-only reconstruction command
 

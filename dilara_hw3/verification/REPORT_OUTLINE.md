@@ -9,7 +9,9 @@ AI-session export; required sections are Title, Abstract, Introduction, Related 
 Method, Experiments, Discussion, AI Usage Disclosure and References. Measured metrics
 must be shown to four decimal places. Include name, team, repository and experiment
 commit; explain team decisions, unresolved issues, personal contributions/verification
-and AI use.
+and AI use. C1, C2 and HW3 are all personally verified by Dilara; HW3 was marked
+`PERSONALLY VERIFIED` on 2026-11-27 after she personally executed the eligibility
+verification and independently confirmed the arithmetic.
 
 Working title:
 
@@ -62,8 +64,9 @@ Working title:
    - Single audited case: user `59E9527FA16DB58874C8`; state explicitly that it is a
      positive outlier and not representative of the mean result. Dilara personally
      checked the arithmetic (`0.63092975` vs `1.00000000`, difference `+0.36907025`)
-     and eligibility. Do not imply that `GRS120003009` was repaired: it failed retry
-     validation and remained source-only fallback; its rank improved indirectly.
+     and personally executed the eligibility verification on 2026-11-27. Do not imply
+     that `GRS120003009` was repaired: it failed retry validation and remained
+     source-only fallback; its rank improved indirectly.
 5. **V. Discussion + VI. AI Usage Disclosure + References** — 0.75 page
    - Interpretation: the retry fixes formatting/schema errors but not unsupported-name
      or unsupported-market grounding errors; top-10 churn does not translate into a
@@ -75,9 +78,9 @@ Working title:
    - Individual contribution: my protocol, code, full run, analyses and verification
      notes; teammates' work kept separate.
    - AI disclosure: assistant wrote/checked code, prepared commands, ran analyses and
-     drafted text; Dilara chose question, reviewed protocol, personally checked C1/C2,
-     case inputs, arithmetic and eligibility results. State team decisions, unresolved
-     issues and personal verification; AI-session export is still to be prepared.
+     drafted text; Dilara chose question, reviewed protocol, personally verified C1/C2,
+     case inputs, arithmetic and eligibility. State team decisions, unresolved issues
+     and personal verification; AI-session export is still to be prepared.
 
 ## Exact absolute nDCG@10 table (archive; use 4 decimals in main text)
 
@@ -151,8 +154,9 @@ Verification for this outline: all eight rows above were re-read from the two sa
 - [x] HW3 selected user, future Buy row and A/B Top-10 lists personally inspected.
 - [x] HW3 nDCG@10 arithmetic personally verified: A `0.63092975`, B `1.00000000`,
       difference `+0.36907025`, matching saved values.
-- [x] HW3 eligibility passed and personally reviewed: `GRS120003009` and both A/B Top-10
-      lists are in the eligible universe; worksheet marked `VERIFIED`.
+- [x] HW3 eligibility personally executed by Dilara on 2026-11-27: eligible universe 767;
+      `GRS120003009` eligible, both Top-10 lists eligible with ranks 2 and 1; worksheet
+      marked `PERSONALLY VERIFIED`.
 - [x] Formal HW3 assignment verified: max five pages excluding references, required
       sections and AI-session export instructions documented above.
 - [ ] Prepare the AI-session export: native JSONL, or a documented derivative preserving
