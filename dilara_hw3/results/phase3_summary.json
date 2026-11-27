@@ -1,0 +1,517 @@
+{
+  "phase": 3,
+  "commit_before_run": "aa56f93",
+  "protocol_hash_stored_in_runs": "50efd4aeb415ba6f0c66dd0793a7c2033cdc32a42b86b58eebbca3e81eaf3417",
+  "preflight_all_pass": true,
+  "inference": {
+    "assets_with_retry": 520,
+    "unique_retry_prompts": 480,
+    "model_calls": 480,
+    "cache_hits": 0,
+    "recovered_assets": 271,
+    "remaining_fallback_assets": 249,
+    "asset_recovery_rate": 0.521154,
+    "prompt_recovery_rate": 0.5375,
+    "recovery_by_original_error": {
+      "Structured response must have exactly the six allowlisted fields": {
+        "assets": 365,
+        "recovered": 264,
+        "rate": 0.723288
+      },
+      "name contains a term not supported by its source field": {
+        "assets": 89,
+        "recovered": 0,
+        "rate": 0.0
+      },
+      "market contains a term not supported by its source field": {
+        "assets": 56,
+        "recovered": 0,
+        "rate": 0.0
+      },
+      "Structured response must be valid JSON": {
+        "assets": 8,
+        "recovered": 7,
+        "rate": 0.875
+      },
+      "name must be a non-empty array of at most eight strings": {
+        "assets": 2,
+        "recovered": 0,
+        "rate": 0.0
+      }
+    },
+    "generation_seconds": {
+      "total": 1545.896,
+      "mean": 3.221,
+      "median": 3.151,
+      "min": 2.383,
+      "max": 5.216
+    },
+    "mean_input_tokens": 348.6,
+    "mean_output_tokens": 60.3,
+    "backend_load_plus_run_seconds": 1553.636210833
+  },
+  "metrics": {
+    "D100": {
+      "all_fallback_structured": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.02917543961365267,
+        "ndcg_at_10_nonempty": 0.26523126921502427
+      },
+      "cbf": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.02010001173607857,
+        "ndcg_at_10_nonempty": 0.18272737941889608
+      },
+      "latest_buy": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.027722649787649066,
+        "ndcg_at_10_nonempty": 0.2520240889786279
+      },
+      "latest_buy_or_sell": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.02710704869390403,
+        "ndcg_at_10_nonempty": 0.24642771539912756
+      },
+      "original_text_cbf": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.023542084151329593,
+        "ndcg_at_10_nonempty": 0.21401894683026904
+      },
+      "popularity": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.028590012799467636,
+        "ndcg_at_10_nonempty": 0.25990920726788763
+      },
+      "structured_encoder_v1": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.039838372363106195,
+        "ndcg_at_10_nonempty": 0.36216702148278357
+      },
+      "structured_retry_once": {
+        "users": 100,
+        "nonempty_truth_users": 11,
+        "empty_truth_users": 89,
+        "ndcg_at_10": 0.03794632780180478,
+        "ndcg_at_10_nonempty": 0.34496661638004344
+      }
+    },
+    "DW": {
+      "all_fallback_structured": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.042253562959033215,
+        "ndcg_at_10_nonempty": 0.37318002463988253
+      },
+      "cbf": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.02860335990981631,
+        "ndcg_at_10_nonempty": 0.25262254371963405
+      },
+      "latest_buy": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.05263282198045581,
+        "ndcg_at_10_nonempty": 0.464848794469153
+      },
+      "latest_buy_or_sell": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.05091088560550386,
+        "ndcg_at_10_nonempty": 0.4496407927331597
+      },
+      "original_text_cbf": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.042002042936485295,
+        "ndcg_at_10_nonempty": 0.3709586202981265
+      },
+      "popularity": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.02617288807593327,
+        "ndcg_at_10_nonempty": 0.23115681455179093
+      },
+      "structured_encoder_v1": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.043234608302552144,
+        "ndcg_at_10_nonempty": 0.3818445371644758
+      },
+      "structured_retry_once": {
+        "users": 10404,
+        "nonempty_truth_users": 1178,
+        "empty_truth_users": 9226,
+        "ndcg_at_10": 0.04294673770199183,
+        "ndcg_at_10_nonempty": 0.3793020874800705
+      }
+    }
+  },
+  "primary_DW_B_minus_A": {
+    "mean": -0.00028787060056029216,
+    "ci_low": -0.0006271707328917344,
+    "ci_high": 4.849145722758762e-05,
+    "improved": 56,
+    "worsened": 115,
+    "unchanged": 10233,
+    "users": 10404,
+    "top10": {
+      "users": 10404,
+      "changed_users": 7445,
+      "mean_top10_overlap": 0.9238081507111828
+    }
+  },
+  "primary_D100_B_minus_A": {
+    "mean": -0.0018920445613014108,
+    "ci_low": -0.0055564819904433006,
+    "ci_high": 0.0,
+    "improved": 0,
+    "worsened": 2,
+    "unchanged": 98,
+    "users": 100,
+    "top10": {
+      "users": 100,
+      "changed_users": 71,
+      "mean_top10_overlap": 0.9250000000000006
+    }
+  },
+  "bootstrap_DW": {
+    "all_users:structured_retry_once_minus_structured_encoder_v1": {
+      "mean": -0.00028787060056029216,
+      "ci_low": -0.0006271707328917344,
+      "ci_high": 4.849145722758762e-05,
+      "improved": 56,
+      "worsened": 115,
+      "unchanged": 10233,
+      "users": 10404,
+      "top10": {
+        "users": 10404,
+        "changed_users": 7445,
+        "mean_top10_overlap": 0.9238081507111828
+      }
+    },
+    "all_users:structured_encoder_v1_minus_all_fallback_structured": {
+      "mean": 0.000981045343518883,
+      "ci_low": 0.0003313377184819118,
+      "ci_high": 0.0016433320377832379,
+      "improved": 284,
+      "worsened": 179,
+      "unchanged": 9941,
+      "users": 10404,
+      "top10": {
+        "users": 10404,
+        "changed_users": 9323,
+        "mean_top10_overlap": 0.79135909265667
+      }
+    },
+    "all_users:structured_retry_once_minus_all_fallback_structured": {
+      "mean": 0.0006931747429585916,
+      "ci_low": 4.7055860685639285e-05,
+      "ci_high": 0.0013427351462287774,
+      "improved": 277,
+      "worsened": 189,
+      "unchanged": 9938,
+      "users": 10404,
+      "top10": {
+        "users": 10404,
+        "changed_users": 10379,
+        "mean_top10_overlap": 0.7921376393694421
+      }
+    },
+    "all_users:structured_encoder_v1_minus_original_text_cbf": {
+      "mean": 0.0012325653660668146,
+      "ci_low": 0.0005358276177091848,
+      "ci_high": 0.0019491801707639575,
+      "improved": 307,
+      "worsened": 179,
+      "unchanged": 9918,
+      "users": 10404,
+      "top10": {
+        "users": 10404,
+        "changed_users": 9928,
+        "mean_top10_overlap": 0.7887447135716946
+      }
+    },
+    "all_users:structured_retry_once_minus_original_text_cbf": {
+      "mean": 0.0009446947655065218,
+      "ci_low": 0.000247240291939566,
+      "ci_high": 0.0016541829517977824,
+      "improved": 300,
+      "worsened": 181,
+      "unchanged": 9923,
+      "users": 10404,
+      "top10": {
+        "users": 10404,
+        "changed_users": 10367,
+        "mean_top10_overlap": 0.7921088043059958
+      }
+    },
+    "nonempty_truth_users:structured_retry_once_minus_structured_encoder_v1": {
+      "mean": -0.002542449684405161,
+      "ci_low": -0.005513570930865438,
+      "ci_high": 0.00036876638393191477,
+      "improved": 56,
+      "worsened": 115,
+      "unchanged": 1007,
+      "users": 1178,
+      "top10": {
+        "users": 1178,
+        "changed_users": 896,
+        "mean_top10_overlap": 0.9185908319184988
+      }
+    },
+    "nonempty_truth_users:structured_encoder_v1_minus_all_fallback_structured": {
+      "mean": 0.00866451252459292,
+      "ci_low": 0.0029835729969155665,
+      "ci_high": 0.014299640596011411,
+      "improved": 284,
+      "worsened": 179,
+      "unchanged": 715,
+      "users": 1178,
+      "top10": {
+        "users": 1178,
+        "changed_users": 1148,
+        "mean_top10_overlap": 0.7985568760611155
+      }
+    },
+    "nonempty_truth_users:structured_retry_once_minus_all_fallback_structured": {
+      "mean": 0.006122062840187765,
+      "ci_low": 0.00038564293158200214,
+      "ci_high": 0.011719747709491721,
+      "improved": 277,
+      "worsened": 189,
+      "unchanged": 712,
+      "users": 1178,
+      "top10": {
+        "users": 1178,
+        "changed_users": 1178,
+        "mean_top10_overlap": 0.8031409168081445
+      }
+    },
+    "nonempty_truth_users:structured_encoder_v1_minus_original_text_cbf": {
+      "mean": 0.010885916866349014,
+      "ci_low": 0.004650387052529605,
+      "ci_high": 0.01682160958151667,
+      "improved": 307,
+      "worsened": 179,
+      "unchanged": 692,
+      "users": 1178,
+      "top10": {
+        "users": 1178,
+        "changed_users": 1171,
+        "mean_top10_overlap": 0.803820033955852
+      }
+    },
+    "nonempty_truth_users:structured_retry_once_minus_original_text_cbf": {
+      "mean": 0.008343467181943849,
+      "ci_low": 0.0020997412926879633,
+      "ci_high": 0.014329029909578322,
+      "improved": 300,
+      "worsened": 181,
+      "unchanged": 697,
+      "users": 1178,
+      "top10": {
+        "users": 1178,
+        "changed_users": 1178,
+        "mean_top10_overlap": 0.8053480475381953
+      }
+    },
+    "subgroup_1_3_buys:structured_retry_once_minus_structured_encoder_v1": {
+      "mean": 1.780041172555246e-05,
+      "ci_low": -0.0002532130343026413,
+      "ci_high": 0.000303408567178291,
+      "improved": 11,
+      "worsened": 26,
+      "unchanged": 7323,
+      "users": 7360,
+      "top10": {
+        "users": 7360,
+        "changed_users": 5047,
+        "mean_top10_overlap": 0.9262092391303998
+      }
+    }
+  },
+  "baseline_deltas_DW": {
+    "all_users": {
+      "structured_encoder_v1_minus_popularity": 0.01706172022661878,
+      "structured_retry_once_minus_popularity": 0.016773849626058487,
+      "structured_encoder_v1_minus_cbf": 0.014631248392735783,
+      "structured_retry_once_minus_cbf": 0.014343377792175496,
+      "structured_encoder_v1_minus_latest_buy": -0.009398213677903689,
+      "structured_retry_once_minus_latest_buy": -0.009686084278463989,
+      "structured_encoder_v1_minus_latest_buy_or_sell": -0.007676277302951764,
+      "structured_retry_once_minus_latest_buy_or_sell": -0.007964147903512056,
+      "structured_encoder_v1_minus_original_text_cbf": 0.0012325653660668146,
+      "structured_retry_once_minus_original_text_cbf": 0.0009446947655065218,
+      "structured_encoder_v1_minus_all_fallback_structured": 0.000981045343518883,
+      "structured_retry_once_minus_all_fallback_structured": 0.0006931747429585916
+    },
+    "nonempty_truth_users": {
+      "structured_encoder_v1_minus_popularity": 0.150687722612684,
+      "structured_retry_once_minus_popularity": 0.14814527292827884,
+      "structured_encoder_v1_minus_cbf": 0.1292219934448413,
+      "structured_retry_once_minus_cbf": 0.12667954376043622,
+      "structured_encoder_v1_minus_latest_buy": -0.08300425730467739,
+      "structured_retry_once_minus_latest_buy": -0.08554670698908264,
+      "structured_encoder_v1_minus_latest_buy_or_sell": -0.06779625556868434,
+      "structured_retry_once_minus_latest_buy_or_sell": -0.07033870525308951,
+      "structured_encoder_v1_minus_original_text_cbf": 0.010885916866349014,
+      "structured_retry_once_minus_original_text_cbf": 0.008343467181943849,
+      "structured_encoder_v1_minus_all_fallback_structured": 0.00866451252459292,
+      "structured_retry_once_minus_all_fallback_structured": 0.006122062840187765
+    },
+    "subgroup_1_3_buys": {
+      "structured_encoder_v1_minus_popularity": 0.008497604644313983,
+      "structured_retry_once_minus_popularity": 0.008515405056039533,
+      "structured_encoder_v1_minus_cbf": 0.004823900384425806,
+      "structured_retry_once_minus_cbf": 0.004841700796151358,
+      "structured_encoder_v1_minus_latest_buy": -0.002101335774329899,
+      "structured_retry_once_minus_latest_buy": -0.0020835353626043464,
+      "structured_encoder_v1_minus_latest_buy_or_sell": -0.0018860645226049504,
+      "structured_retry_once_minus_latest_buy_or_sell": -0.0018682641108793976,
+      "structured_encoder_v1_minus_original_text_cbf": 0.000289894048200865,
+      "structured_retry_once_minus_original_text_cbf": 0.0003076944599264176,
+      "structured_encoder_v1_minus_all_fallback_structured": 0.00017148060154395642,
+      "structured_retry_once_minus_all_fallback_structured": 0.0001892810132695089
+    }
+  },
+  "recommendation_changes_DW": {
+    "all_users": {
+      "users": 10404,
+      "changed_users": 7445,
+      "mean_top10_overlap": 0.9238081507111828,
+      "users_with_repaired_asset_entering_top10": 5263,
+      "repaired_asset_top10_entries": 6224
+    },
+    "nonempty_truth_users": {
+      "users": 1178,
+      "changed_users": 896,
+      "mean_top10_overlap": 0.9185908319184988,
+      "users_with_repaired_asset_entering_top10": 620,
+      "repaired_asset_top10_entries": 682
+    },
+    "subgroup_1_3_buys": {
+      "users": 7360,
+      "changed_users": 5047,
+      "mean_top10_overlap": 0.9262092391303998,
+      "users_with_repaired_asset_entering_top10": 3615,
+      "repaired_asset_top10_entries": 4393
+    }
+  },
+  "failure_analysis_DW": {
+    "failures": {
+      "rejected_assets": 520,
+      "unique_retry_prompts": 480,
+      "retry_valid": 271,
+      "retry_fallback": 249,
+      "asset_recovery_rate": 0.5211538461538462,
+      "prompt_recovery_rate": 0.5375,
+      "reasons": {
+        "Structured response must have exactly the six allowlisted fields": 365,
+        "market contains a term not supported by its source field": 56,
+        "Structured response must be valid JSON": 8,
+        "name contains a term not supported by its source field": 89,
+        "name must be a non-empty array of at most eight strings": 2
+      },
+      "retry_error_counts": {
+        "market contains a term not supported by its source field": 65,
+        "name must be a non-empty array of at most eight strings": 14,
+        "name contains a term not supported by its source field": 167,
+        "name contains duplicate terms": 3
+      },
+      "recovery_by_reason": {
+        "Structured response must have exactly the six allowlisted fields": {
+          "total": 365,
+          "recovered": 264,
+          "rate": 0.7232876712328767
+        },
+        "market contains a term not supported by its source field": {
+          "total": 56,
+          "recovered": 0,
+          "rate": 0.0
+        },
+        "Structured response must be valid JSON": {
+          "total": 8,
+          "recovered": 7,
+          "rate": 0.875
+        },
+        "name contains a term not supported by its source field": {
+          "total": 89,
+          "recovered": 0,
+          "rate": 0.0
+        },
+        "name must be a non-empty array of at most eight strings": {
+          "total": 2,
+          "recovered": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "asset_recovery_exposure": 108,
+    "aggregate_by_error": {
+      "Structured response must have exactly the six allowlisted fields": {
+        "assets": 365,
+        "recovered": 264,
+        "exposed_recovered": 106,
+        "recovery_rate": 0.7232876712328767
+      },
+      "": {
+        "assets": 247,
+        "recovered": 0,
+        "exposed_recovered": 0,
+        "recovery_rate": 0.0
+      },
+      "name contains a term not supported by its source field": {
+        "assets": 89,
+        "recovered": 0,
+        "exposed_recovered": 0,
+        "recovery_rate": 0.0
+      },
+      "market contains a term not supported by its source field": {
+        "assets": 56,
+        "recovered": 0,
+        "exposed_recovered": 0,
+        "recovery_rate": 0.0
+      },
+      "Structured response must be valid JSON": {
+        "assets": 8,
+        "recovered": 7,
+        "exposed_recovered": 2,
+        "recovery_rate": 0.875
+      },
+      "name must be a non-empty array of at most eight strings": {
+        "assets": 2,
+        "recovered": 0,
+        "exposed_recovered": 0,
+        "recovery_rate": 0.0
+      }
+    }
+  },
+  "decision_rule": "DW all-user B-A 95% CI includes zero; fallback count drops. Per protocol, hypothesis is unsupported/inconclusive; no tuning applied.",
+  "manual_verification": {
+    "C1": "NOT_VERIFIED",
+    "C2": "NOT_VERIFIED",
+    "HW3": "NOT_VERIFIED"
+  }
+}
