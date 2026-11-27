@@ -1,0 +1,18 @@
+OpenCode AI-session export redaction report
+
+Source database: /Users/dafaritova/.local/share/opencode/opencode.db
+Output: /Users/dafaritova/Downloads/far-trans-group7-hw3-dilara/dilara_hw3/submission/ai_session/opencode_hw3_session.jsonl
+Generated at (UTC): 2026-11-27T07:18:02.398150+00:00
+
+Checks performed:
+- Scanned every exported string in messages, generated code, tool inputs and tool outputs.
+- Patterns checked: private keys, OpenAI-style keys, GitHub tokens/PATs, Google API keys, Slack tokens, bearer tokens, the local committer identity and the local hostname.
+- No credential or API-token values were found.
+- Local committer identity redactions: 14.
+- Local hostname redactions: 13.
+- No other redactions were applied.
+- Internal reasoning and step/compaction markers were excluded by format rule; no retained content was paraphrased.
+
+Message records: 401
+Tool calls: 498
+Tool results: 495

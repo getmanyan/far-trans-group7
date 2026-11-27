@@ -1,0 +1,9 @@
+data/
+outputs/
+generation_cache/
+*.safetensors
+*.bin
+*.gguf
+*session*.json
+__pycache__/
+*.pyc
