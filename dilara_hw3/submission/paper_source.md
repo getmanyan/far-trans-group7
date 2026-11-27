@@ -12,9 +12,9 @@ This individual Homework 3 study tests whether one validation-aware second LLM a
 
 Group 7 asked when LLM-generated asset descriptions help FAR-Trans users, especially those with short histories. My individual question is narrower: after a strict grounded JSON encoder rejects an asset description, does one validation-aware retry reduce source-only fallback and improve future-purchase nDCG@10? This is a focused ablation that changes one component—the second attempt—while keeping the cohort, prompt family, candidate assets, labels, scorer, and model outputs frozen after protocol commit `d644f56` [4].
 
-The main result is deliberately inconclusive in the negative direction. Retry substantially improves output validity, but the primary DW recommendation metric is slightly negative and statistically inconclusive. The selected positive user case is a hand-checked outlier, not representative of the mean. I report development results only; the official final evaluation set was not available for this homework.
+The primary DW difference is slightly negative, but its confidence interval includes zero. Retry substantially improves output validity without establishing either a recommendation-quality gain or a reliable degradation. The selected positive user case is a hand-checked outlier, not representative of the mean. I report development results only; the official final evaluation set was not available for this homework.
 
-**Contributions.** I froze the protocol before running the experiment, replayed D100 as a gate, ran the full DW retry experiment, performed paired bootstrap and failure analysis, and personally verified one paper claim, one data/temporal rule, and one complete user-level result. An AI assistant generated and checked code, commands and draft text; my verification worksheets and the exported session distinguish these roles.
+**Contributions.** I selected the research question, reviewed and approved the frozen protocol, supervised the D100 replay and DW experiment, interpreted paired bootstrap and failure-analysis results, and personally verified a paper claim, a data record and a user-level result. OpenCode assisted with implementation, tests, analytical computations and drafting; the verification worksheets and exported session document that assistance.
 
 ## 2. Related work
 
@@ -42,7 +42,7 @@ The eight evaluated methods are Popularity, CBF, Latest buy, Latest buy or sell,
 
 ## 5. Results: D100 reproduction and DW evaluation
 
-D100 replay reproduced the saved structured-encoder metrics and per-user results byte-for-byte, except for seven users whose official `cbf` baseline had an already-documented tie-order difference. D100 B−A is −0.0018920 with interval [−0.0055565, 0.0000000] (0 improved, 2 worsened, 98 unchanged); D100 has only 11 nonempty-truth users, so it is continuity evidence, not primary evidence.
+The D100 replay reproduced the saved `metrics.json` and `per_user.json` files byte-for-byte. Separately, the ranked-ID comparison detected tie-order differences for seven users in the untouched official CBF baseline; other methods' ranked IDs matched. D100 B−A is −0.0018920 with interval [−0.0055565, 0.0000000] (0 improved, 2 worsened, 98 unchanged); D100 has only 11 nonempty-truth users, so it is continuity evidence, not primary evidence.
 
 DW is the main development evaluation. A scores 0.0432 all-user nDCG@10 and B scores 0.0429. The primary paired B−A difference is −0.0002879, interval [−0.0006272, +0.0000485], with 56 improved, 115 worsened and 10,233 unchanged. The interval includes zero. On the predefined 1–3-history subgroup, B−A is +0.0000178, interval [−0.0002532, +0.0003034], labelled exploratory. Latest buy remains the strongest mean method on DW (0.0526).
 
@@ -65,7 +65,7 @@ Against All-fallback structured, A−C is +0.0009810 [+0.0003313, +0.0016433] an
 
 Retry recovered 264/365 extra-field failures, 7/8 invalid-JSON failures, 0/89 unsupported-name failures, 0/56 unsupported-market failures and 0/2 name-length failures. Retry errors that remained include 167 unsupported-name, 65 unsupported-market, 14 name-length and 3 duplicate-term cases. Validity improved mainly for schema problems, not grounding problems.
 
-Top-10 rankings changed for 7,445/10,404 users (mean overlap 0.9238). Repaired assets entered the top-10 for 5,263 users (6,224 entries), but only 108 recovered assets were exposed anywhere in history, truth or top-10, and no grounding-repaired asset was exposed. High churn therefore does not imply a quality gain.
+Top-10 rankings changed for 7,445/10,404 users (mean overlap 0.9238). Repaired assets entered the top-10 for 5,263 users (6,224 entries), but only 108 recovered assets were exposed anywhere in history, truth or top-10, and there were no successfully grounding-repaired assets. High churn therefore does not imply a quality gain.
 
 ## 7. Individually verified examples
 
@@ -77,17 +77,19 @@ Top-10 rankings changed for 7,445/10,404 users (mean overlap 0.9238). Repaired a
 
 ## 8. Discussion and conclusion
 
-The retry fixes formatting/schema errors but cannot resolve unsupported names or markets because the second sample repeats the same grounding failure. The primary interval includes zero, so the scientific conclusion is that retry improves output validity but does not establish an overall recommendation improvement. The positive hand-checked case must not be generalized.
+In this run, retry fixed many schema/JSON errors but did not resolve any unsupported-name or unsupported-market errors; the second attempt repeatedly reproduced grounding failures. The primary interval includes zero, so the scientific conclusion is that retry improves output validity but does not establish an overall recommendation improvement. The positive hand-checked case must not be generalized.
 
 Limitations: these are development results on teaching data; DW was visible to teammates; 9,226 DW users have empty truth; D100 has 11 nonempty users; prompt knowledge cutoff and feedback-versus-second-sample effects remain confounds; bootstrap and subgroup summaries were generated by the assistant, while C1/C2/HW3 were personally checked. Team decisions and unresolved issues: keep encoder variants separate, do not compare teammate runs, reserve the official final set, and report the inconclusive primary result.
 
-I personally chose the question, reviewed and froze the protocol, wrote and checked the implementation, ran and audited the experiment, executed the personal checks, and wrote the interpretation. The assistant generated and checked code, prepared commands, ran analyses and drafted text. A genuine OpenCode JSONL export preserving prompts, generated code, tool calls and tool results accompanies this report; no fictional transcript was substituted.
+## 9. Individual contribution and AI usage disclosure
+
+I defined the research question, reviewed and approved the frozen protocol, initiated and inspected experiment runs, checked the reported outputs and interpretation, and independently verified the cited method, data record and user-level recommendation example. AI-assisted tools supported code implementation, testing, statistical analysis and report drafting. The accompanying genuine OpenCode JSONL export documents generated code, tool calls and tool results; it is not a reconstructed transcript.
 
 ## References
 
-[1] Javier Sanz-Cruzado, Nikolaos Droukas and Richard McCreadie. “FAR-Trans: An Investment Dataset for Financial Asset Recommendation.” IJCAI-2024 Workshop on Recommender Systems in Finance (Fin-RecSys), Jeju, 2024.
+[1] Javier Sanz-Cruzado, Nikolaos Droukas, and Richard McCreadie. “FAR-Trans: An Investment Dataset for Financial Asset Recommendation.” IJCAI-2024 Workshop on Recommender Systems in Finance (Fin-RecSys), Jeju, 2024.
 
-[2] Chenyang Lyu et al. “LLM-Rec: Personalized Recommendation via Prompting Large Language Models.” Findings of the Association for Computational Linguistics: NAACL 2024, pp. 583–612, 2024. https://aclanthology.org/2024.findings-naacl.39.pdf
+[2] Hanjia Lyu et al. “LLM-Rec: Personalized Recommendation via Prompting Large Language Models.” Findings of the Association for Computational Linguistics: NAACL 2024, pp. 583–612, 2024. https://aclanthology.org/2024.findings-naacl.39.pdf
 
 [3] Qwen Team. “Qwen3 Technical Report.” arXiv:2505.09388, 2025. https://arxiv.org/abs/2505.09388
 
