@@ -50,6 +50,14 @@ Reference implementation: `dilara_hw2/far-trans/starter.py:60-66`.
 - Executed by: Dilara Faritova
 - Date: __________
 
+Raw evidence prepared by the agent (NOT personally verified):
+
+- `dilara_hw3/outputs/replay_check_final/replay_comparison.json` — exact-metrics and
+  byte-exact-ranking checks for the saved HW2 D100 run.
+- `dilara_hw3/outputs/replay_check_final/predictions.csv` — replayed HW2 ranked IDs;
+  use this only as a dry run of the worksheet procedure, not as the HW3 case.
+- No HW3 A/B prediction file exists yet. Do not fill in a case from the replay output.
+
 Note: `outputs/robustness_analysis/manual_verification.md` in my HW2 outputs contains
 an analogous check for user `94A16DE0F59F24BB77C2` (nDCG@10 = 1.0). That is an **HW2**
 artifact and is not a personal verification of this HW3 run.

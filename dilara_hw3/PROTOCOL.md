@@ -419,5 +419,12 @@ not a personal HW3 verification.
 
 ## 10. Amendments
 
-None. Any change after the protocol commit must be appended here with commit hash,
-timestamp, reason and whether it affects the primary endpoint.
+1. **Phase 2 implementation note** (added after commit `d644f56`; recorded in
+   `dilara_hw3/IMPLEMENTATION_NOTES.md`). Reason: implementation required a replay-only
+   method-name mapping to the exact HW2 name, a `limit=0` path for DW, and a fixed
+   `PYTHONHASHSEED=0` because the unchanged starter's `set` iteration can flip ties in
+   the official `cbf` baseline by ~1e-16. No endpoint, cohort, method definition,
+   metric, selection rule or validation rule was changed. Primary endpoint unaffected.
+   D100 replay produced byte-identical `metrics.json` and `per_user.json`; all ranked
+   lists were identical except official `cbf` ties for 7 users. No full retry run has
+   been performed.

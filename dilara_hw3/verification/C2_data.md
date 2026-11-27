@@ -59,3 +59,13 @@ PY
 Agent-prepared expectations (to be checked, not copied as your own observation): row
 `FI0009003305, Sampo Oyj, UNK_93, Stock, , XHEL, Financial Services,
 Insurance - Diversified, 2018-01-02`; `sampoyj in "sampo oyj"` is False, `sampo` is True.
+
+Raw evidence already prepared by the agent (still NOT personally verified):
+
+- `dilara_hw3/outputs/verify_inputs.json` — CSV SHA-256s, protocol hash, 767 prompts,
+  520 failures, 480 unique retry prompts, all-failures-have-generation check.
+- `dilara_hw3/outputs/smoke_3/retry_audit.jsonl` — record for `FI0009003305`: the
+  validation-aware retry also returned `name=["sampoyj"]`, was rejected, and the
+  deterministic source-only fallback was used.
+- `dilara_hw3/outputs/smoke_3/retry_prompts.jsonl` — the exact retry prompt for this
+  asset, so you can check it contains only the six as-of fields plus validation feedback.
