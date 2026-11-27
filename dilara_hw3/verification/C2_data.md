@@ -1,6 +1,6 @@
 # C2 — manual verification of a FAR-Trans record and temporal assumption
 
-STATUS: **NOT VERIFIED — Dilara must execute and confirm.**
+STATUS: **PERSONALLY VERIFIED BY DILARA (reported 2026-11-27).**
 
 Target record: `ISIN=FI0009003305` (`Sampo Oyj`). Its HW2 first response was rejected
 with `name contains a term not supported by its source field` because the model emitted
@@ -10,7 +10,31 @@ with `name contains a term not supported by its source field` because the model 
 
 Check one real CSV row and the temporal assumption used by the starter.
 
-## Commands to execute
+## Recorded observation
+
+- Verbatim CSV row observed (`asset_information.csv`):
+
+  ```json
+  {"ISIN": "FI0009003305", "assetCategory": "Stock", "assetName": "Sampo Oyj", "assetShortName": "UNK_93", "assetSubCategory": "", "industry": "Insurance - Diversified", "marketID": "XHEL", "sector": "Financial Services", "timestamp": "2018-01-02"}
+  ```
+
+- Is the metadata timestamp strictly before `2021-06-01`? **Yes**; `2018-01-02 <
+  2021-06-01`.
+- Which terms are substrings of the casefolded source name `"sampo oyj"`? `sampoyj`:
+  **False**; `sampo`: **True**; `oyj`: **True**.
+- Exact validator error recorded in my HW2 run: `name contains a term not supported by
+  its source field`.
+- Recorded HW2 response (agent-retrieved from the saved failure log): a JSON object with
+  a duplicated `category` key and `name: ["sampoyj"]`. The saved failure reason is the
+  unsupported name, not the duplicate key.
+- Does this support the retry hypothesis? **It supports classifying the failure as a
+  fixable formatting/grounding error in principle.** It does not by itself prove that my
+  retry fixed this asset: the saved retry audit for `FI0009003305` still shows
+  `name=["sampoyj"]`, `retry_valid=false`, and source-only fallback.
+- Executed by: **Dilara Faritova** (personally reported).
+- Date: **2026-11-27**.
+
+## Commands used / to re-run
 
 ```bash
 cd /Users/dafaritova/Downloads/FAR-Trans
@@ -18,7 +42,7 @@ cd /Users/dafaritova/Downloads/FAR-Trans
 # (a) exact row in the original asset file
 python3 - <<'PY'
 import csv
-with open('asset_information.csv', newline='', encoding='utf-8') as f:
+with open('asset_information.csv', newline='', encoding='utf-8-sig') as f:
     for row in csv.DictReader(f):
         if row['ISIN'] == 'FI0009003305':
             print(row)
@@ -46,21 +70,7 @@ for line in open(p):
 PY
 ```
 
-## Fill in after execution
-
-- Verbatim CSV row observed: ____________________________________
-- Is the metadata timestamp strictly before `2021-06-01`? _______
-- Which terms are substrings of the casefolded source name? _____
-- Exact validator error recorded in my HW2 run: _________________
-- Does this support the retry hypothesis (a fixable formatting error)? ______
-- Executed by: Dilara Faritova
-- Date: __________
-
-Agent-prepared expectations (to be checked, not copied as your own observation): row
-`FI0009003305, Sampo Oyj, UNK_93, Stock, , XHEL, Financial Services,
-Insurance - Diversified, 2018-01-02`; `sampoyj in "sampo oyj"` is False, `sampo` is True.
-
-Raw evidence already prepared by the agent (still NOT personally verified):
+## Agent-prepared evidence (not the personal check)
 
 - `dilara_hw3/outputs/verify_inputs.json` — CSV SHA-256s, protocol hash, 767 prompts,
   520 failures, 480 unique retry prompts, all-failures-have-generation check.
@@ -68,4 +78,4 @@ Raw evidence already prepared by the agent (still NOT personally verified):
   validation-aware retry also returned `name=["sampoyj"]`, was rejected, and the
   deterministic source-only fallback was used.
 - `dilara_hw3/outputs/smoke_3/retry_prompts.jsonl` — the exact retry prompt for this
-  asset, so you can check it contains only the six as-of fields plus validation feedback.
+  asset, containing only the six as-of fields plus validation feedback.
